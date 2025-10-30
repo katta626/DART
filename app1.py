@@ -11,6 +11,10 @@ from datastore import DataStore  # SQLite handler
 import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_autorefresh import st_autorefresh
+from io import BytesIO
+import zipfile
+import re
+from PIL import Image
 
 # Initialize database
 db = DataStore("data_store.db")
@@ -113,13 +117,10 @@ def main_1():
                 proc = st.session_state.proc
                 if proc:
                     proc.terminate()
-                    print("done 1")
                     try:
-                        proc.wait(timeout=5)
-                        print("done")  # Wait up to 5 seconds for process to exit
+                        proc.wait(timeout=5) # Wait up to 5 seconds for process to exit
                     except subprocess.TimeoutExpired:
-                        proc.kill()
-                        print("doneeeee")  # Force kill if not terminated
+                        proc.kill()  # Force kill if not terminated
                     st.session_state.proc = None
                     db.update_system_status("status_current", "❌")
                     st.warning("Stopped Observation.")
@@ -238,11 +239,15 @@ def filter_lines(lines, keywords):
     
 
 def main():
-    tab1, tab2, tab3 = st.tabs(["LOG UPDATES", "DATA CENTRE", "DIAGNOSTIC PLOTS"])
+    tab1, tab2, tab3 = st.tabs(["LOG UPDATES", "🌀 Pulsar Data Archive", "DIAGNOSTIC PLOTS"])
     with tab1:
         #log_current_str = db.get_system_status("Log_Current") or ""
         #log_files = log_current_str.split(",") if log_current_str else []
-        log_files = db.get_system_status("Log_Current") or ""
+        log_files = db.get_system_status("Log_Current") or []
+        # Ensure it's always a list
+        if isinstance(log_files, str):
+            log_files = [log_files]
+        print(log_files)
         FILTER_KEYWORDS = ["Waiting for", "Observation", "Pulsar:", "ACQ over","Removing Trigger file from remote machine", "Observation stoped","SLIP check", "Pulsar data reduction pipeline started ...","---", "All done!"]
 
         if not log_files:
@@ -263,54 +268,55 @@ def main():
                     st.text("No matching logs yet.")
                     
     with tab2:
-        # --- Load data from CSV ---
-        df = pd.read_csv("pulsar_data.csv")
-        df["Observation Time"] = pd.to_datetime(df["Observation Time"])
+        def get_image_from_disk(path_to_image):
+            """Load image from disk as PIL Image object."""
+            return Image.open(path_to_image)
 
-        # --- Inline filters: Date filter and row selection
-        col1, col2 = st.columns([1, 3])
+        def image_to_base64(img):
+            if img:
+                with BytesIO() as buffer:
+                    img.save(buffer, "png")
+                    raw_base64 = base64.b64encode(buffer.getvalue()).decode()
+                    return f"data:image/png;base64,{raw_base64}"
+        
+        BASE_DIR = "/Users/naveenkatta/Downloads/DART/fits_plots"  # Each subfolder = Pulsar Name
 
-        with col1:
-            date_filter = st.date_input("Filter by Observation Date", value=None)
+        # --- Step 1: List available pulsars ---
+        if not os.path.exists(BASE_DIR):
+            print(f"Plots directory '{BASE_DIR}' not found.")
 
-        # Apply filter
-        filtered_df = df.copy()
-        if date_filter:
-            filtered_df = filtered_df[filtered_df["Observation Time"].dt.date == date_filter]
+        pulsars = [d for d in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, d))]
+        if not pulsars:
+            print("No pulsar folders found inside 'plots/'.")
+        df = pd.DataFrame(columns=["Pulsar", "FITS", "PNG", "Observation Dates"])
+        for selected_pulsar in pulsars:
+            pulsar_dir = os.path.join(BASE_DIR, selected_pulsar)
+            files = os.listdir(pulsar_dir)
+            fits_files = [f for f in files if f.endswith(".fits")]
+            png_files = [f for f in files if f.endswith(".png")]
 
-        with col2:
-            selected_rows = st.multiselect(
-                "Select rows to download .fits",
-                filtered_df.index,
-                format_func=lambda x: f"{filtered_df.loc[x, 'Pulsar Name']} at {filtered_df.loc[x, 'Observation Time']}"
-            )
+            print(f"{selected_pulsar}: {len(fits_files)} FITS files, {len(png_files)} PNG files")
+            for f in fits_files:
+                match = re.search(r'(\d{2})_(\d{2})_(\d{4})', f)
+                if match:
+                    day, month, year = match.groups()
+                    print(f"File: {f} => Date: {day}-{month}-{year}")
+                    image_path = pulsar_dir + "/" + f.replace(".fits", ".png")
+                    image_path = image_to_base64(get_image_from_disk(image_path))
+                    df.loc[len(df)] = [selected_pulsar ,f , image_path, f"{day}-{month}-{year}"]
+                    
+        st.data_editor(
+                        df,
+                        column_config={
+                            "PNG": st.column_config.ImageColumn(
+                                "Preview Image", help="Streamlit app preview screenshots",
+                                width = "small"
+                            )
+                        },
+                        hide_index=True
+                    )
 
-        # --- Show the filtered table
-        st.dataframe(filtered_df)
 
-        # --- Download selected .fits files as zip
-        if selected_rows:
-            zip_buffer = BytesIO()
-            with zipfile.ZipFile(zip_buffer, "w") as zip_file:
-                for idx in selected_rows:
-                    file_name = filtered_df.loc[idx, "FITS Filename"]
-                    file_path = os.path.join("fits_files", file_name)
-
-                    if os.path.exists(file_path):
-                        zip_file.write(file_path, arcname=file_name)
-                    else:
-                        st.warning(f"File not found: {file_name}")
-
-            zip_buffer.seek(0)
-
-            st.download_button(
-                label="Download Selected FITS Files as ZIP",
-                data=zip_buffer,
-                file_name="selected_pulsars.zip",
-                mime="application/zip"
-            )
-        else:
-            st.info("Select rows above to enable download.")
 
     with tab3:
         # Row 1: First two images

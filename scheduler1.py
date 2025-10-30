@@ -5,7 +5,7 @@ from pulsar_info import RA
 from datastore import DataStore  # ← your SQLite handler
 import requests
 from urllib.parse import quote
-THRESHOLD_SECONDS = 2400000  # Execution threshold in seconds
+THRESHOLD_SECONDS = 30000  # Execution threshold in seconds
 FILTER_KEYWORDS = [
     "Waiting for", "Observation", "Pulsar:", "ACQ over",
     "Removing Trigger file from remote machine", "Observation stoped",
@@ -29,12 +29,13 @@ def filter_lines(lines, keywords):
     return [line for line in lines if any(k in line for k in keywords)]
 
 def main():
-    print("naveen katta")
+    #print("naveen katta")
     changed = False
     # Load all observations and status data
     schedule = {obs["name"]: obs for obs in db.get_all_observations()}
     system_status = db.get_system_status("status_current") or "N/A"
-    log_current = db.get_system_status("Log_Current") or ""
+    log_current = db.get_system_status("Log_Current") or []
+
     for pulsar, data in schedule.items():
         status = data["status"]
         countdown = data["count_down"]
@@ -88,7 +89,7 @@ def main():
                         # add new file if not already present
                 if log_name not in log_current:
                     log_current.append(log_name)
-                    db.update_system_status("Log_Current", ",".join(log_current))
+                    db.update_system_status("Log_Current", log_current)
                 for log_name in log_current:
                     lines = read_all_lines(file_path)
                     if lines and "Observation Over." in lines[-1]:
