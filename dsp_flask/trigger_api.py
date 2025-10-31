@@ -15,15 +15,15 @@ def trigger_observation():
     
     return {"status": "observation started"}, 200
 
-def run_observation(params):
-    #observation_script = "/home/dsp/PDR_acquire_setup/GBD_DART_lite_obs_script_V5_IQUV_FITS_09_09_2025.sh"
-    #print("Running observation with:", params)
+def run_observation(params): # it talks with vela PC.
+    observation_script = "/home/dsp/PDR_acquire_setup/GBD_DART_lite_obs_script_V5_IQUV_FITS_09_09_2025.sh"
+    print("Running observation with:", params)
     
-    #obs_trigger_cmd = observation_script+" "+str(params["duration"])+" "+str(params["target"])+' '+str(params["countdown"])
-    #print(obs_trigger_cmd)
-    time.sleep(10000)
-    #os.system(obs_trigger_cmd)
-    # Example: call shell scripts, trigger scheduler, etc.
+    obs_trigger_cmd = observation_script+" "+str(params["duration"])+" "+str(params["target"])+' '+str(params["countdown"])
+    print(obs_trigger_cmd)
+    #time.sleep(10000)
+    os.system(obs_trigger_cmd)
+    # Example: call shell scripts.
     
 
 @app.route('/get-log', methods=['GET'])

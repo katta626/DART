@@ -43,9 +43,9 @@ def main():
         transit_time = data["transit_time"]
         # ---- DUMMY CHECK ----
         if pulsar == "dummy":
-            if countdown < 300:
+            if countdown < 300: # fixed for 5 min.
                 db.update_observation(pulsar, status="In Progress")
-                data_post = {"target": "dummy", "duration": 10, "countdown": "1000"}
+                data_post = {"target": "dummy", "duration": 5, "countdown": "1000"}
                 # requests.post("http://172.16.126.79:5000/trigger", json=data_post)
             if status == "In Progress":
                 filename = "obs_2025-09-27_14-30.log"
@@ -72,20 +72,20 @@ def main():
                 
                 os.makedirs(log_dir, exist_ok=True)
                 save_path = os.path.join(log_dir, log_name)
-                filename = "1pps_09_09_2025_observation.log"
+                #filename = "1pps_09_09_2025_observation.log"
                 file_path = os.path.join("log_files", log_name)
                 
                 encoded_log_name = quote(log_name) # Encodes '+' to '%2B'
                 
-                #url = f"http://172.17.20.210:6000/get-log?filename={encoded_log_name}"
-                #response = requests.get(url)
+                url = f"http://172.17.20.210:6000/get-log?filename={encoded_log_name}"
+                response = requests.get(url)
                 
-                #param = {"filename":encoded_log_name}
-                #response = requests.get("http://172.17.20.210:6000/get-log", params=param)
+                param = {"filename":encoded_log_name}
+                response = requests.get("http://172.17.20.210:6000/get-log", params=param)
                 
-                #if response.status_code == 200:
-                    #with open(save_path, "wb") as f:
-                        #f.write(response.content)
+                if response.status_code == 200:
+                    with open(save_path, "wb") as f:
+                        f.write(response.content)
                         # add new file if not already present
                 if log_name not in log_current:
                     log_current.append(log_name)
@@ -115,7 +115,7 @@ def main():
                     num_files = duration * 2
                     db.update_observation(pulsar, status="In Progress")
                     data_post = {"target": pulsar, "duration": num_files, "countdown": "300"}
-                    #requests.post("http://172.17.20.210:6000/trigger", json=data_post)
+                    requests.post("http://172.17.20.210:6000/trigger", json=data_post)
                     changed = True
     #if changed:
         #print("Database updated with latest observation data.")
