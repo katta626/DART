@@ -1,0 +1,115 @@
+08-07-2026 21:31 Waiting for J1619+3953 observation...
+08-07-2026 21:36 Observation started...
+08-07-2026 21:36 Pulsar: J1619+3953 , parfile: /home/dsp/parfiles/J1619+3953.par , DM: 23.0
+08-07-2026 21:36 Trigger sent to obs. PC [VELA].
+08-07-2026 21:38 Acquired 4.
+08-07-2026 21:38 ACQ over.
+08-07-2026 21:38 Removing Trigger file from remote machine 
+08-07-2026 21:38 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Jul  8 21:32 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_08_07_2026_21_32_1783526572.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul  8 21:33 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_08_07_2026_21_33_1783526601.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul  8 21:33 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_08_07_2026_21_33_1783526631.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul  8 21:34 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_08_07_2026_21_34_1783526660.PCAP_PDR
+08-07-2026 21:38 RAW PCAP data moved from Transient Buffer.
+08-07-2026 21:38 SLIP check Started ...
+08-07-2026 21:38 - WARNING - Data Directory: /data/dsp/GBD_TRANSIENT_BUFFER/J1619+3953/08_07_2026
+08-07-2026 21:38 - WARNING - Number of Files: 4
+08-07-2026 21:38 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J1619+3953/08_07_2026/PDR_GULP_data000.pcap_08_07_2026_21_32_1783526572.PCAP_PDR
+08-07-2026 21:38 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3446434804 27575 2026-07-08T16:02:20.392297
+08-07-2026 21:38 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3448317345 27604 2026-07-08T16:02:49.600143
+08-07-2026 21:38 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+08-07-2026 21:38 - WARNING - 1882541 29 29207846 microseconds
+08-07-2026 21:38 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J1619+3953/08_07_2026/PDR_GULP_data001.pcap_08_07_2026_21_33_1783526601.PCAP_PDR
+08-07-2026 21:38 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3448317346 27604 2026-07-08T16:02:49.600144
+08-07-2026 21:38 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3450199887 27633 2026-07-08T16:03:18.807994
+08-07-2026 21:38 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+08-07-2026 21:38 - WARNING - 1882541 29 29207850 microseconds
+08-07-2026 21:38 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J1619+3953/08_07_2026/PDR_GULP_data002.pcap_08_07_2026_21_33_1783526631.PCAP_PDR
+08-07-2026 21:38 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3450199888 27633 2026-07-08T16:03:18.807995
+08-07-2026 21:38 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3452082429 27663 2026-07-08T16:03:48.015899
+08-07-2026 21:38 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+08-07-2026 21:38 - WARNING - 1882541 30 29207904 microseconds
+08-07-2026 21:38 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J1619+3953/08_07_2026/PDR_GULP_data000.pcap_08_07_2026_21_34_1783526660.PCAP_PDR
+08-07-2026 21:38 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3452082430 27663 2026-07-08T16:03:48.015899
+08-07-2026 21:38 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+08-07-2026 21:38 - WARNING - 3453964971 27692 2026-07-08T16:04:17.223741
+08-07-2026 21:38 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+08-07-2026 21:38 - WARNING - 1882541 29 29207842 microseconds
+08-07-2026 21:38 SLIP check Finished...
+08-07-2026 21:38 Pulsar data reduction pipeline started ...
+08-07-2026 21:38 - WARNING - Data Directory: /data/dsp/GBD_TRANSIENT_BUFFER/J1619+3953/08_07_2026
+08-07-2026 21:38 - WARNING - Pulsar: J1619+3953
+08-07-2026 21:38 - WARNING - CH selelction: 0
+08-07-2026 21:38 - WARNING - Phase file: /home/dsp/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+08-07-2026 21:38 - WARNING - Obs. logfile: /home/dsp/PDR_acquire_setup/master_obs_log/J1619+3953_08_07_2026_observation.log
+08-07-2026 21:38 - WARNING - Observation start time: 2026_07_08_21_32_49
+08-07-2026 21:38 - WARNING - parfile: /home/dsp/parfiles/J1619+3953.par
+08-07-2026 21:38 - WARNING - DM: 23.0
+08-07-2026 21:38 - WARNING - Period: 1.8837978656269263
+08-07-2026 21:38 - WARNING - RA_DEC: 16:19:13.47+39:53:05.3
+08-07-2026 21:38 - WARNING - out_dada_file: J1619+3953_2026_07_08_21_32_49_type_0.dada
+08-07-2026 21:38 - WARNING - Number of files to process: 4
+08-07-2026 21:38 - WARNING - Files per batch:  17
+08-07-2026 21:38 - WARNING - Time taken for PDR2DADA convertion: 0:00:46.882339
+08-07-2026 21:38 - WARNING - Center_freq: 175
+08-07-2026 21:38 - WARNING - int_time: 3.0
+08-07-2026 21:38 - WARNING - nbins: 256
+08-07-2026 21:38 - WARNING - fil_chan: 256
+08-07-2026 21:38 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+08-07-2026 21:38 - WARNING - thread: 32
+08-07-2026 21:38 - WARNING - nbit: 8
+08-07-2026 21:38 - WARNING - time_avg: 0.000256
+08-07-2026 21:38 - WARNING - MJD_START: 61229.66862960238
+08-07-2026 21:38 - WARNING - output: J1619+3953_61229.67_175MHz_type_0_GBD_DART
+08-07-2026 21:38 - WARNING - singularity_container: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  
+08-07-2026 21:38 - WARNING - ------ DIGIFITS ------
+08-07-2026 21:38 - WARNING - ---- Search Mode FITS -------
+08-07-2026 21:38 - WARNING - digifits_ful_stokes_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 J1619+3953_2026_07_08_21_32_49_type_0.dada -o J1619+3953_2026_07_08_21_32_49_type_0.dada_stokes.fits
+08-07-2026 21:40 - WARNING - ------ Total intensity FITS -------
+08-07-2026 21:40 - WARNING - digifits_total_intensity_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 J1619+3953_2026_07_08_21_32_49_type_0.dada -o J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits
+08-07-2026 21:41 - WARNING - Nchan: 256
+08-07-2026 21:41 - WARNING - Nbin: 256
+08-07-2026 21:41 - WARNING - Tavg: 0.000256
+08-07-2026 21:41 - WARNING - Time taken for DIGIFITS run: 0:02:13.378719
+08-07-2026 21:41 - WARNING - ------ DSPSR ------
+08-07-2026 21:41 - WARNING - ------- Coherent Dedispersion Folded archive -------
+08-07-2026 21:41 - WARNING - dspsr_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  dspsr J1619+3953_2026_07_08_21_32_49_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 -t 32 -E /home/dsp/parfiles/J1619+3953.par -L 3.0 -b 256 -F 256:D -N J1619+3953 -a PSRFITS -A -e .fits -O J1619+3953_61229.67_175MHz_type_0_GBD_DART
+08-07-2026 21:41 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+08-07-2026 21:41 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  dspsr J1619+3953_2026_07_08_21_32_49_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 -t 32 -E /home/dsp/parfiles/J1619+3953.par -L 3.0 -b 256 -N J1619+3953 -A -e .fits -O J1619+3953_61229.67_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+08-07-2026 21:41 - WARNING - Time taken for DSPSR run: 0:00:29.867649
+08-07-2026 21:41 - WARNING - ------ PSREDIT ------
+08-07-2026 21:41 - WARNING - psredit_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  psredit -c name=J1619+3953,be:name=GSB,coord=16:19:13.47+39:53:05.3 -m *_GBD_DART*fits
+08-07-2026 21:41 - WARNING - Time taken for PSREDIT run: 0:00:00.687613
+08-07-2026 21:41 - WARNING - ------ Iterative RFI Cleaner ------
+08-07-2026 21:41 - WARNING - Iterative_cleaner_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   python3 /home/dsp/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+08-07-2026 21:42 - WARNING - Time taken for Iterative_cleaner run: 0:00:21.616162
+08-07-2026 21:42 - WARNING - ------ PDMP ------
+08-07-2026 21:42 - WARNING - pdmp_cmd1: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  pdmp -dr 2 -ds 0.05 -g J1619+3953_61229.67_175MHz_type_0_GBD_DART.fits_cleaned.ar.ps/cps J1619+3953_61229.67_175MHz_type_0_GBD_DART.fits_cleaned.ar
+08-07-2026 21:42 - WARNING - pdmp_cmd2: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  pdmp -dr 2 -ds 0.05 -g J1619+3953_61229.67_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar.ps/cps J1619+3953_61229.67_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar
+08-07-2026 21:42 - WARNING - Time taken for PDMP run: 0:00:12.275343
+08-07-2026 21:42 - WARNING - ------ PS2PDF ------
+08-07-2026 21:42 - WARNING - ps2pdf_cmd1: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  ps2pdf J1619+3953_61229.67_175MHz_type_0_GBD_DART.fits_cleaned.ar.ps J1619+3953_61229.67_175MHz_type_0_GBD_DART.fits_cleaned.ar.ps.pdf
+08-07-2026 21:42 - WARNING - ps2pdf_cmd2: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  ps2pdf J1619+3953_61229.67_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar.ps J1619+3953_61229.67_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar.ps.pdf
+08-07-2026 21:42 - WARNING - Time taken for PDMP run: 0:00:00.675784
+08-07-2026 21:42 - WARNING - Overall time taken for data reduction: 0:04:05.385856
+08-07-2026 21:42 - WARNING - J1619+3953_2026_07_08_21_32_49_type_0.dada... file removed
+08-07-2026 21:42 - WARNING - All done!
+08-07-2026 21:42 --- PRESTO ---
+08-07-2026 21:42 singularity_container: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  
+08-07-2026 21:42 Filterbank to Process for PULSAR: J1619+3953 with DM:23.0 : J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits
+08-07-2026 21:42 --- RFIFIND ---
+08-07-2026 21:42 RFIFIND: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   rfifind -time 2.0 -o J1619+3953 J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits
+08-07-2026 21:42 --- PREPDATA ---
+08-07-2026 21:42 PREPDATA: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   prepdata -nobary -o J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits -dm 23.0 -mask J1619+3953_rfifind.mask J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits
+08-07-2026 21:42 --- REALFFT ---
+08-07-2026 21:42 REALFFT: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   realfft  J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits.dat
+08-07-2026 21:42 --- ACCELSEARCH ---
+08-07-2026 21:42 ACCELSEARCH: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  J1619+3953_2026_07_08_21_32_49_type_0.dada_intensity.fits.fft
+08-07-2026 21:42 Observation Over.

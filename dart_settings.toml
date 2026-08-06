@@ -1,0 +1,38 @@
+# Edit this file when IPs, ports, paths, or runtime settings change.
+
+[paths]
+database = "data_store.db"
+log_dir = "log_files"
+fits_plots = "fits_plots"
+background_image = "dart.png"
+scheduler_script = "scheduler1.py"
+
+[network]
+scheme = "http"
+api_host = "172.17.20.210"
+api_port = 6000
+request_timeout_seconds = 5
+flask_bind_host = "0.0.0.0"
+
+[observatory]
+longitude = 77.437547
+latitude = 13.603839
+height_m = 713
+
+[ui]
+timezone = "Asia/Kolkata"
+archive_recent_limit = 5
+refresh_interval_ms = 1000
+page_title = "DART"
+page_icon = "☩"
+quick_observation_name = "1pps"
+quick_add_countdown_seconds = 10
+
+[scheduler]
+threshold_seconds = 10
+poll_interval_seconds = 1
+quick_trigger_countdown = 10
+standard_trigger_countdown = 300
+
+[observation]
+script = ""

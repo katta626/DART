@@ -1,0 +1,1112 @@
+11-12-2025 11:31 Waiting for 1pps observation...
+11-12-2025 11:31 Observation started...
+11-12-2025 11:31 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 11:31 Trigger sent to obs. PC [VELA].
+11-12-2025 11:33 Acquired 4.
+11-12-2025 11:33 ACQ over.
+11-12-2025 11:33 Removing Trigger file from remote machine 
+11-12-2025 11:33 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 11:30 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_11_30_1765432858.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 11:31 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_11_31_1765432887.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 11:31 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_11_31_1765432916.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 11:32 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_11_32_1765432946.PCAP_PDR
+11-12-2025 11:33 RAW PCAP data moved from Transient Buffer.
+11-12-2025 11:33 SLIP check Started ...
+11-12-2025 11:33 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 11:33 - WARNING - Number of Files: 4
+11-12-2025 11:33 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_11_30_1765432858.PCAP_PDR
+11-12-2025 11:33 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2077190551 54249 2025-12-11T06:00:26.289476
+11-12-2025 11:33 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2079073092 54278 2025-12-11T06:00:55.497340
+11-12-2025 11:33 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 11:33 - WARNING - 1882541 29 29207864 microseconds
+11-12-2025 11:33 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_11_31_1765432887.PCAP_PDR
+11-12-2025 11:33 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2079073093 54278 2025-12-11T06:00:55.497341
+11-12-2025 11:33 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2080955634 54307 2025-12-11T06:01:24.705259
+11-12-2025 11:33 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 11:33 - WARNING - 1882541 29 29207918 microseconds
+11-12-2025 11:33 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_11_31_1765432916.PCAP_PDR
+11-12-2025 11:33 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2080955635 54307 2025-12-11T06:01:24.705260
+11-12-2025 11:33 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2082838176 54336 2025-12-11T06:01:53.913126
+11-12-2025 11:33 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 11:33 - WARNING - 1882541 29 29207866 microseconds
+11-12-2025 11:33 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_11_32_1765432946.PCAP_PDR
+11-12-2025 11:33 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2082838177 54336 2025-12-11T06:01:53.913178
+11-12-2025 11:33 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 11:33 - WARNING - 2084720719 54366 2025-12-11T06:02:23.121051
+11-12-2025 11:33 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 11:33 - WARNING - 1882542 30 29207873 microseconds
+11-12-2025 11:33 SLIP check Finished...
+11-12-2025 11:33 Pulsar data reduction pipeline started ...
+11-12-2025 11:33 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 11:33 - WARNING - Pulsar: 1pps
+11-12-2025 11:33 - WARNING - CH selelction: 0
+11-12-2025 11:33 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 11:33 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 11:33 - WARNING - Observation start time: 2025_12_11_11_30_55
+11-12-2025 11:33 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 11:33 --- PRESTO ---
+11-12-2025 11:33 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 11:33 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 
+11-12-2025 11:33 --- RFIFIND ---
+11-12-2025 11:33 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 
+11-12-2025 11:33 --- PREPDATA ---
+11-12-2025 11:33 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o  -dm 0.000000001 -mask 1pps_rfifind.mask 
+11-12-2025 11:33 --- REALFFT ---
+11-12-2025 11:33 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  .dat
+11-12-2025 11:33 --- ACCELSEARCH ---
+11-12-2025 11:33 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  .fft
+11-12-2025 11:33 Observation Over.
+11-12-2025 11:40 Waiting for 1pps observation...
+11-12-2025 11:40 Observation started...
+11-12-2025 11:40 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 11:40 Trigger sent to obs. PC [VELA].
+11-12-2025 11:42 Acquired 4.
+11-12-2025 11:42 ACQ over.
+11-12-2025 11:42 Removing Trigger file from remote machine 
+11-12-2025 11:42 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 11:40 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_11_40_1765433413.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 11:40 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_11_40_1765433442.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 11:41 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_11_41_1765433471.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 11:41 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_11_41_1765433501.PCAP_PDR
+11-12-2025 11:42 RAW PCAP data moved from Transient Buffer.
+11-12-2025 11:42 SLIP check Started ...
+11-12-2025 11:42 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 11:42 - WARNING - Number of Files: 8
+11-12-2025 11:42 SLIP check Finished...
+11-12-2025 11:42 Pulsar data reduction pipeline started ...
+11-12-2025 11:42 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 11:42 - WARNING - Pulsar: 1pps
+11-12-2025 11:42 - WARNING - CH selelction: 0
+11-12-2025 11:42 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 11:42 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 11:42 - WARNING - Observation start time: 2025_12_11_11_30_55
+11-12-2025 11:42 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 11:42 - WARNING - DM: 0.000000001
+11-12-2025 11:42 - WARNING - Period: 1.0
+11-12-2025 11:42 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 11:42 - WARNING - out_dada_file: 1pps_2025_12_11_11_30_55_type_0.dada
+11-12-2025 11:42 - WARNING - Number of files to process: 8
+11-12-2025 11:42 - WARNING - Files per batch:  14
+11-12-2025 11:52 --- PRESTO ---
+11-12-2025 11:52 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 11:52 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 
+11-12-2025 11:52 --- RFIFIND ---
+11-12-2025 11:52 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 
+11-12-2025 11:52 --- PREPDATA ---
+11-12-2025 11:52 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o  -dm 0.000000001 -mask 1pps_rfifind.mask 
+11-12-2025 11:52 --- REALFFT ---
+11-12-2025 11:52 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  .dat
+11-12-2025 11:52 --- ACCELSEARCH ---
+11-12-2025 11:52 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  .fft
+11-12-2025 11:52 Observation Over.
+11-12-2025 12:04 Waiting for 1pps observation...
+11-12-2025 12:04 Waiting for 1pps observation...
+11-12-2025 12:04 Waiting for 1pps observation...
+11-12-2025 12:04 Waiting for 1pps observation...
+11-12-2025 12:04 Observation started...
+11-12-2025 12:04 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 12:04 Trigger sent to obs. PC [VELA].
+11-12-2025 12:05 Acquired 4.
+11-12-2025 12:05 ACQ over.
+11-12-2025 12:05 Removing Trigger file from remote machine 
+11-12-2025 12:05 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 11:42 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_11_42_1765433530.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:04 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_12_04_1765434844.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:04 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_12_04_1765434873.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:05 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_12_05_1765434903.PCAP_PDR
+11-12-2025 12:05 RAW PCAP data moved from Transient Buffer.
+11-12-2025 12:05 SLIP check Started ...
+11-12-2025 12:05 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 12:05 - WARNING - Number of Files: 4
+11-12-2025 12:05 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_11_42_1765433530.PCAP_PDR
+11-12-2025 12:05 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2120489021 54921 2025-12-11T06:11:38.071152
+11-12-2025 12:05 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2122371562 54950 2025-12-11T06:12:07.279071
+11-12-2025 12:05 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:05 - WARNING - 1882541 29 29207919 microseconds
+11-12-2025 12:05 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_12_04_1765434844.PCAP_PDR
+11-12-2025 12:05 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2205203418 56235 2025-12-11T06:33:32.433895
+11-12-2025 12:05 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2207085959 56264 2025-12-11T06:34:01.641937
+11-12-2025 12:05 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:05 - WARNING - 1882541 29 29208042 microseconds
+11-12-2025 12:05 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_12_04_1765434873.PCAP_PDR
+11-12-2025 12:05 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2207085960 56264 2025-12-11T06:34:01.641937
+11-12-2025 12:05 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2208968502 56293 2025-12-11T06:34:30.849923
+11-12-2025 12:05 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:05 - WARNING - 1882542 29 29207986 microseconds
+11-12-2025 12:05 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_12_05_1765434903.PCAP_PDR
+11-12-2025 12:05 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2208968503 56293 2025-12-11T06:34:30.849969
+11-12-2025 12:05 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:05 - WARNING - 2210851044 56323 2025-12-11T06:35:00.057954
+11-12-2025 12:05 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:05 - WARNING - 1882541 30 29207985 microseconds
+11-12-2025 12:05 SLIP check Finished...
+11-12-2025 12:05 Pulsar data reduction pipeline started ...
+11-12-2025 12:05 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 12:05 - WARNING - Pulsar: 1pps
+11-12-2025 12:05 - WARNING - CH selelction: 0
+11-12-2025 12:05 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 12:05 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 12:05 - WARNING - Observation start time: 2025_12_11_11_42_07
+11-12-2025 12:05 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 12:05 - WARNING - DM: 0.000000001
+11-12-2025 12:05 - WARNING - Period: 1.0
+11-12-2025 12:05 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 12:05 - WARNING - out_dada_file: 1pps_2025_12_11_11_42_07_type_0.dada
+11-12-2025 12:05 - WARNING - Number of files to process: 4
+11-12-2025 12:05 - WARNING - Files per batch:  14
+11-12-2025 12:10 - WARNING - Time taken for PDR2DADA convertion: 0:04:30.988217
+11-12-2025 12:10 - WARNING - Center_freq: 175
+11-12-2025 12:10 - WARNING - int_time: 3.0
+11-12-2025 12:10 - WARNING - nbins: 256
+11-12-2025 12:10 - WARNING - fil_chan: 256
+11-12-2025 12:10 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 12:10 - WARNING - thread: 32
+11-12-2025 12:10 - WARNING - nbit: 8
+11-12-2025 12:10 - WARNING - time_avg: 0.000256
+11-12-2025 12:10 - WARNING - MJD_START: 61020.258417590536
+11-12-2025 12:10 - WARNING - output: 1pps_61020.26_175MHz_type_0_GBD_DART
+11-12-2025 12:10 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 12:10 - WARNING - ------ DIGIFITS ------
+11-12-2025 12:10 - WARNING - ---- Search Mode FITS -------
+11-12-2025 12:10 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_11_42_07_type_0.dada -o 1pps_2025_12_11_11_42_07_type_0.dada_stokes.fits
+11-12-2025 12:11 - WARNING - ------ Total intensity FITS -------
+11-12-2025 12:11 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_11_42_07_type_0.dada -o 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:12 - WARNING - Nchan: 256
+11-12-2025 12:12 - WARNING - Nbin: 256
+11-12-2025 12:12 - WARNING - Tavg: 0.000256
+11-12-2025 12:12 - WARNING - Time taken for DIGIFITS run: 0:01:48.635153
+11-12-2025 12:12 - WARNING - ------ DSPSR ------
+11-12-2025 12:12 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 12:12 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_11_42_07_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.26_175MHz_type_0_GBD_DART
+11-12-2025 12:12 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 12:12 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_11_42_07_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.26_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 12:12 - WARNING - Time taken for DSPSR run: 0:00:15.529721
+11-12-2025 12:12 - WARNING - ------ PSREDIT ------
+11-12-2025 12:12 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 12:12 - WARNING - Time taken for PSREDIT run: 0:00:00.402327
+11-12-2025 12:12 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 12:12 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 12:12 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.182317
+11-12-2025 12:12 - WARNING - ------ PDMP ------
+11-12-2025 12:12 --- PRESTO ---
+11-12-2025 12:12 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 12:12 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:12 --- RFIFIND ---
+11-12-2025 12:12 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:12 --- PREPDATA ---
+11-12-2025 12:12 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:12 --- REALFFT ---
+11-12-2025 12:12 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits.dat
+11-12-2025 12:12 --- ACCELSEARCH ---
+11-12-2025 12:12 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits.fft
+11-12-2025 12:12 Observation Over.
+11-12-2025 12:19 Waiting for 1pps observation...
+11-12-2025 12:19 Observation started...
+11-12-2025 12:19 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 12:19 Trigger sent to obs. PC [VELA].
+11-12-2025 12:20 Acquired 4.
+11-12-2025 12:20 ACQ over.
+11-12-2025 12:20 Removing Trigger file from remote machine 
+11-12-2025 12:20 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 12:05 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_12_05_1765434932.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:19 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_12_19_1765435750.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:19 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_12_19_1765435779.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:20 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_12_20_1765435808.PCAP_PDR
+11-12-2025 12:20 RAW PCAP data moved from Transient Buffer.
+11-12-2025 12:20 SLIP check Started ...
+11-12-2025 12:20 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 12:20 - WARNING - Number of Files: 8
+11-12-2025 12:20 SLIP check Finished...
+11-12-2025 12:20 Pulsar data reduction pipeline started ...
+11-12-2025 12:20 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 12:20 - WARNING - Pulsar: 1pps
+11-12-2025 12:20 - WARNING - CH selelction: 0
+11-12-2025 12:20 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 12:20 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 12:20 - WARNING - Observation start time: 2025_12_11_11_42_07
+11-12-2025 12:20 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 12:20 - WARNING - DM: 0.000000001
+11-12-2025 12:20 - WARNING - Period: 1.0
+11-12-2025 12:20 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 12:20 - WARNING - out_dada_file: 1pps_2025_12_11_11_42_07_type_0.dada
+11-12-2025 12:20 - WARNING - Number of files to process: 8
+11-12-2025 12:20 - WARNING - Files per batch:  14
+11-12-2025 12:21 - WARNING - Time taken for PDR2DADA convertion: 0:00:41.088299
+11-12-2025 12:21 - WARNING - Center_freq: 175
+11-12-2025 12:21 - WARNING - int_time: 3.0
+11-12-2025 12:21 - WARNING - nbins: 256
+11-12-2025 12:21 - WARNING - fil_chan: 256
+11-12-2025 12:21 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 12:21 - WARNING - thread: 32
+11-12-2025 12:21 - WARNING - nbit: 8
+11-12-2025 12:21 - WARNING - time_avg: 0.000256
+11-12-2025 12:21 - WARNING - MJD_START: 61020.258417590536
+11-12-2025 12:21 - WARNING - output: 1pps_61020.26_175MHz_type_0_GBD_DART
+11-12-2025 12:21 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 12:21 - WARNING - ------ DIGIFITS ------
+11-12-2025 12:21 - WARNING - ---- Search Mode FITS -------
+11-12-2025 12:21 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_11_42_07_type_0.dada -o 1pps_2025_12_11_11_42_07_type_0.dada_stokes.fits
+11-12-2025 12:23 - WARNING - ------ Total intensity FITS -------
+11-12-2025 12:23 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_11_42_07_type_0.dada -o 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:24 - WARNING - Nchan: 256
+11-12-2025 12:24 - WARNING - Nbin: 256
+11-12-2025 12:24 - WARNING - Tavg: 0.000256
+11-12-2025 12:24 - WARNING - Time taken for DIGIFITS run: 0:03:33.661603
+11-12-2025 12:24 - WARNING - ------ DSPSR ------
+11-12-2025 12:24 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 12:24 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_11_42_07_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.26_175MHz_type_0_GBD_DART
+11-12-2025 12:25 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 12:25 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_11_42_07_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.26_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 12:25 - WARNING - Time taken for DSPSR run: 0:00:30.125204
+11-12-2025 12:25 - WARNING - ------ PSREDIT ------
+11-12-2025 12:25 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 12:25 - WARNING - Time taken for PSREDIT run: 0:00:00.820915
+11-12-2025 12:25 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 12:25 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 12:25 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.154057
+11-12-2025 12:25 - WARNING - ------ PDMP ------
+11-12-2025 12:25 --- PRESTO ---
+11-12-2025 12:25 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 12:25 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:25 --- RFIFIND ---
+11-12-2025 12:25 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:25 --- PREPDATA ---
+11-12-2025 12:25 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+11-12-2025 12:25 --- REALFFT ---
+11-12-2025 12:25 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits.dat
+11-12-2025 12:25 --- ACCELSEARCH ---
+11-12-2025 12:25 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits.fft
+11-12-2025 12:25 Observation Over.
+11-12-2025 12:42 Waiting for 1pps observation...
+11-12-2025 12:42 Observation started...
+11-12-2025 12:42 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 12:42 Trigger sent to obs. PC [VELA].
+11-12-2025 12:44 Acquired 4.
+11-12-2025 12:44 ACQ over.
+11-12-2025 12:44 Removing Trigger file from remote machine 
+11-12-2025 12:44 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 12:41 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_12_42_1765437122.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:42 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_12_42_1765437152.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:42 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_12_43_1765437181.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 12:43 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_12_43_1765437210.PCAP_PDR
+11-12-2025 12:44 RAW PCAP data moved from Transient Buffer.
+11-12-2025 12:44 SLIP check Started ...
+11-12-2025 12:44 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 12:44 - WARNING - Number of Files: 4
+11-12-2025 12:44 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_12_42_1765437122.PCAP_PDR
+11-12-2025 12:44 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2352041707 58513 2025-12-11T07:11:30.653659
+11-12-2025 12:44 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2353924248 58542 2025-12-11T07:11:59.861571
+11-12-2025 12:44 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:44 - WARNING - 1882541 29 29207912 microseconds
+11-12-2025 12:44 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_12_42_1765437152.PCAP_PDR
+11-12-2025 12:44 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2353924249 58542 2025-12-11T07:11:59.861620
+11-12-2025 12:44 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2355806791 58572 2025-12-11T07:12:29.069530
+11-12-2025 12:44 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:44 - WARNING - 1882542 30 29207910 microseconds
+11-12-2025 12:44 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_12_43_1765437181.PCAP_PDR
+11-12-2025 12:44 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2355806792 58572 2025-12-11T07:12:29.069579
+11-12-2025 12:44 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2357689333 58601 2025-12-11T07:12:58.277498
+11-12-2025 12:44 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:44 - WARNING - 1882541 29 29207919 microseconds
+11-12-2025 12:44 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_12_43_1765437210.PCAP_PDR
+11-12-2025 12:44 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2357689334 58601 2025-12-11T07:12:58.277499
+11-12-2025 12:44 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 12:44 - WARNING - 2359571875 58630 2025-12-11T07:13:27.485421
+11-12-2025 12:44 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 12:44 - WARNING - 1882541 29 29207922 microseconds
+11-12-2025 12:44 SLIP check Finished...
+11-12-2025 12:44 Pulsar data reduction pipeline started ...
+11-12-2025 12:44 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 12:44 - WARNING - Pulsar: 1pps
+11-12-2025 12:44 - WARNING - CH selelction: 0
+11-12-2025 12:44 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 12:44 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 12:44 - WARNING - Observation start time: 2025_12_11_12_41_59
+11-12-2025 12:44 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 12:44 - WARNING - DM: 0.000000001
+11-12-2025 12:44 - WARNING - Period: 1.0
+11-12-2025 12:44 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 12:44 - WARNING - out_dada_file: 1pps_2025_12_11_12_41_59_type_0.dada
+11-12-2025 12:44 - WARNING - Number of files to process: 4
+11-12-2025 12:44 - WARNING - Files per batch:  14
+11-12-2025 12:44 - WARNING - Time taken for PDR2DADA convertion: 0:00:26.918253
+11-12-2025 12:44 - WARNING - Center_freq: 175
+11-12-2025 12:44 - WARNING - int_time: 3.0
+11-12-2025 12:44 - WARNING - nbins: 256
+11-12-2025 12:44 - WARNING - fil_chan: 256
+11-12-2025 12:44 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 12:44 - WARNING - thread: 32
+11-12-2025 12:44 - WARNING - nbit: 8
+11-12-2025 12:44 - WARNING - time_avg: 0.000256
+11-12-2025 12:44 - WARNING - MJD_START: 61020.29999842198
+11-12-2025 12:44 - WARNING - output: 1pps_61020.3_175MHz_type_0_GBD_DART
+11-12-2025 12:44 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 12:44 - WARNING - ------ DIGIFITS ------
+11-12-2025 12:44 - WARNING - ---- Search Mode FITS -------
+11-12-2025 12:44 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_12_41_59_type_0.dada -o 1pps_2025_12_11_12_41_59_type_0.dada_stokes.fits
+11-12-2025 12:45 - WARNING - ------ Total intensity FITS -------
+11-12-2025 12:45 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_12_41_59_type_0.dada -o 1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits
+11-12-2025 12:46 - WARNING - Nchan: 256
+11-12-2025 12:46 - WARNING - Nbin: 256
+11-12-2025 12:46 - WARNING - Tavg: 0.000256
+11-12-2025 12:46 - WARNING - Time taken for DIGIFITS run: 0:01:52.061010
+11-12-2025 12:46 - WARNING - ------ DSPSR ------
+11-12-2025 12:46 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 12:46 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_12_41_59_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.3_175MHz_type_0_GBD_DART
+11-12-2025 12:46 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 12:46 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_12_41_59_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.3_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 12:46 - WARNING - Time taken for DSPSR run: 0:00:18.603138
+11-12-2025 12:46 - WARNING - ------ PSREDIT ------
+11-12-2025 12:46 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 12:46 - WARNING - Time taken for PSREDIT run: 0:00:01.003358
+11-12-2025 12:46 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 12:46 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 12:46 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.161848
+11-12-2025 12:46 - WARNING - ------ PDMP ------
+11-12-2025 12:46 --- PRESTO ---
+11-12-2025 12:46 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 12:46 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits
+11-12-2025 12:46 --- RFIFIND ---
+11-12-2025 12:46 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits
+11-12-2025 12:47 --- PREPDATA ---
+11-12-2025 12:47 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits
+11-12-2025 12:47 --- REALFFT ---
+11-12-2025 12:47 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits.dat
+11-12-2025 12:47 --- ACCELSEARCH ---
+11-12-2025 12:47 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_11_42_07_type_0.dada_intensity.fits
+1pps_2025_12_11_12_41_59_type_0.dada_intensity.fits.fft
+11-12-2025 12:47 Observation Over.
+11-12-2025 14:22 Waiting for 1pps observation...
+11-12-2025 14:23 Observation started...
+11-12-2025 14:23 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 14:23 Trigger sent to obs. PC [VELA].
+11-12-2025 14:24 Acquired 4.
+11-12-2025 14:24 ACQ over.
+11-12-2025 14:24 Removing Trigger file from remote machine 
+11-12-2025 14:24 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 14:22 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_14_22_1765443168.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 14:23 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_14_23_1765443198.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 14:23 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_14_23_1765443227.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 14:24 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_14_24_1765443256.PCAP_PDR
+11-12-2025 14:24 RAW PCAP data moved from Transient Buffer.
+11-12-2025 14:24 SLIP check Started ...
+11-12-2025 14:24 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 14:24 - WARNING - Number of Files: 4
+11-12-2025 14:24 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_14_22_1765443168.PCAP_PDR
+11-12-2025 14:24 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2741727936 64559 2025-12-11T08:52:16.698334
+11-12-2025 14:24 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2743610477 64588 2025-12-11T08:52:45.906368
+11-12-2025 14:24 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 14:24 - WARNING - 1882541 29 29208034 microseconds
+11-12-2025 14:24 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_14_23_1765443198.PCAP_PDR
+11-12-2025 14:24 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2743610478 64588 2025-12-11T08:52:45.906368
+11-12-2025 14:24 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2745493019 64618 2025-12-11T08:53:15.114356
+11-12-2025 14:24 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 14:24 - WARNING - 1882541 30 29207988 microseconds
+11-12-2025 14:24 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_14_23_1765443227.PCAP_PDR
+11-12-2025 14:24 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2745493020 64618 2025-12-11T08:53:15.114406
+11-12-2025 14:24 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2747375562 64647 2025-12-11T08:53:44.322391
+11-12-2025 14:24 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 14:24 - WARNING - 1882542 29 29207985 microseconds
+11-12-2025 14:24 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_14_24_1765443256.PCAP_PDR
+11-12-2025 14:24 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2747375563 64647 2025-12-11T08:53:44.322440
+11-12-2025 14:24 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 14:24 - WARNING - 2749258104 64676 2025-12-11T08:54:13.530421
+11-12-2025 14:24 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 14:24 - WARNING - 1882541 29 29207981 microseconds
+11-12-2025 14:24 SLIP check Finished...
+11-12-2025 14:24 Pulsar data reduction pipeline started ...
+11-12-2025 14:24 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 14:24 - WARNING - Pulsar: 1pps
+11-12-2025 14:24 - WARNING - CH selelction: 0
+11-12-2025 14:24 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 14:24 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 14:24 - WARNING - Observation start time: 2025_12_11_14_22_45
+11-12-2025 14:24 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 14:24 - WARNING - DM: 0.000000001
+11-12-2025 14:24 - WARNING - Period: 1.0
+11-12-2025 14:24 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 14:24 - WARNING - out_dada_file: 1pps_2025_12_11_14_22_45_type_0.dada
+11-12-2025 14:24 - WARNING - Number of files to process: 4
+11-12-2025 14:24 - WARNING - Files per batch:  14
+11-12-2025 14:25 - WARNING - Time taken for PDR2DADA convertion: 0:00:44.132467
+11-12-2025 14:25 - WARNING - Center_freq: 175
+11-12-2025 14:25 - WARNING - int_time: 3.0
+11-12-2025 14:25 - WARNING - nbins: 256
+11-12-2025 14:25 - WARNING - fil_chan: 256
+11-12-2025 14:25 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 14:25 - WARNING - thread: 32
+11-12-2025 14:25 - WARNING - nbit: 8
+11-12-2025 14:25 - WARNING - time_avg: 0.000256
+11-12-2025 14:25 - WARNING - MJD_START: 61020.36997580858
+11-12-2025 14:25 - WARNING - output: 1pps_61020.37_175MHz_type_0_GBD_DART
+11-12-2025 14:25 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 14:25 - WARNING - ------ DIGIFITS ------
+11-12-2025 14:25 - WARNING - ---- Search Mode FITS -------
+11-12-2025 14:25 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_14_22_45_type_0.dada -o 1pps_2025_12_11_14_22_45_type_0.dada_stokes.fits
+11-12-2025 14:26 - WARNING - ------ Total intensity FITS -------
+11-12-2025 14:26 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_14_22_45_type_0.dada -o 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:27 - WARNING - Nchan: 256
+11-12-2025 14:27 - WARNING - Nbin: 256
+11-12-2025 14:27 - WARNING - Tavg: 0.000256
+11-12-2025 14:27 - WARNING - Time taken for DIGIFITS run: 0:01:59.580915
+11-12-2025 14:27 - WARNING - ------ DSPSR ------
+11-12-2025 14:27 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 14:27 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_14_22_45_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.37_175MHz_type_0_GBD_DART
+11-12-2025 14:27 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 14:27 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_14_22_45_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.37_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 14:27 - WARNING - Time taken for DSPSR run: 0:00:18.635102
+11-12-2025 14:27 - WARNING - ------ PSREDIT ------
+11-12-2025 14:27 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 14:27 - WARNING - Time taken for PSREDIT run: 0:00:00.457046
+11-12-2025 14:27 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 14:27 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 14:27 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.177593
+11-12-2025 14:27 - WARNING - ------ PDMP ------
+11-12-2025 14:27 --- PRESTO ---
+11-12-2025 14:27 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 14:27 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:27 --- RFIFIND ---
+11-12-2025 14:27 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:28 --- PREPDATA ---
+11-12-2025 14:28 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:28 --- REALFFT ---
+11-12-2025 14:28 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits.dat
+11-12-2025 14:28 --- ACCELSEARCH ---
+11-12-2025 14:28 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits.fft
+11-12-2025 14:28 Observation Over.
+11-12-2025 14:38 Waiting for 1pps observation...
+11-12-2025 14:38 Observation started...
+11-12-2025 14:38 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 14:38 Trigger sent to obs. PC [VELA].
+11-12-2025 14:40 Acquired 4.
+11-12-2025 14:40 ACQ over.
+11-12-2025 14:40 Removing Trigger file from remote machine 
+11-12-2025 14:40 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 14:24 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_14_24_1765443285.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 14:38 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_14_38_1765444132.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 14:39 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_14_39_1765444161.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 14:39 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_14_39_1765444191.PCAP_PDR
+11-12-2025 14:40 RAW PCAP data moved from Transient Buffer.
+11-12-2025 14:40 SLIP check Started ...
+11-12-2025 14:40 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 14:40 - WARNING - Number of Files: 8
+11-12-2025 14:40 SLIP check Finished...
+11-12-2025 14:40 Pulsar data reduction pipeline started ...
+11-12-2025 14:40 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 14:40 - WARNING - Pulsar: 1pps
+11-12-2025 14:40 - WARNING - CH selelction: 0
+11-12-2025 14:40 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 14:40 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 14:40 - WARNING - Observation start time: 2025_12_11_14_22_45
+11-12-2025 14:40 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 14:40 - WARNING - DM: 0.000000001
+11-12-2025 14:40 - WARNING - Period: 1.0
+11-12-2025 14:40 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 14:40 - WARNING - out_dada_file: 1pps_2025_12_11_14_22_45_type_0.dada
+11-12-2025 14:40 - WARNING - Number of files to process: 8
+11-12-2025 14:40 - WARNING - Files per batch:  14
+11-12-2025 14:41 - WARNING - Time taken for PDR2DADA convertion: 0:01:25.778303
+11-12-2025 14:41 - WARNING - Center_freq: 175
+11-12-2025 14:41 - WARNING - int_time: 3.0
+11-12-2025 14:41 - WARNING - nbins: 256
+11-12-2025 14:41 - WARNING - fil_chan: 256
+11-12-2025 14:41 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 14:41 - WARNING - thread: 32
+11-12-2025 14:41 - WARNING - nbit: 8
+11-12-2025 14:41 - WARNING - time_avg: 0.000256
+11-12-2025 14:41 - WARNING - MJD_START: 61020.36997580858
+11-12-2025 14:41 - WARNING - output: 1pps_61020.37_175MHz_type_0_GBD_DART
+11-12-2025 14:41 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 14:41 - WARNING - ------ DIGIFITS ------
+11-12-2025 14:41 - WARNING - ---- Search Mode FITS -------
+11-12-2025 14:41 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_14_22_45_type_0.dada -o 1pps_2025_12_11_14_22_45_type_0.dada_stokes.fits
+11-12-2025 14:44 - WARNING - ------ Total intensity FITS -------
+11-12-2025 14:44 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_14_22_45_type_0.dada -o 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:45 - WARNING - Nchan: 256
+11-12-2025 14:45 - WARNING - Nbin: 256
+11-12-2025 14:45 - WARNING - Tavg: 0.000256
+11-12-2025 14:45 - WARNING - Time taken for DIGIFITS run: 0:03:48.320604
+11-12-2025 14:45 - WARNING - ------ DSPSR ------
+11-12-2025 14:45 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 14:45 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_14_22_45_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.37_175MHz_type_0_GBD_DART
+11-12-2025 14:46 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 14:46 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_14_22_45_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.37_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 14:46 - WARNING - Time taken for DSPSR run: 0:00:30.278350
+11-12-2025 14:46 - WARNING - ------ PSREDIT ------
+11-12-2025 14:46 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 14:46 - WARNING - Time taken for PSREDIT run: 0:00:00.818530
+11-12-2025 14:46 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 14:46 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 14:46 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.728072
+11-12-2025 14:46 - WARNING - ------ PDMP ------
+11-12-2025 14:46 --- PRESTO ---
+11-12-2025 14:46 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 14:46 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:46 --- RFIFIND ---
+11-12-2025 14:46 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:46 --- PREPDATA ---
+11-12-2025 14:46 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits
+11-12-2025 14:46 --- REALFFT ---
+11-12-2025 14:46 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits.dat
+11-12-2025 14:46 --- ACCELSEARCH ---
+11-12-2025 14:46 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_14_22_45_type_0.dada_intensity.fits.fft
+11-12-2025 14:46 Observation Over.
+11-12-2025 15:03 Waiting for 1pps observation...
+11-12-2025 15:23 Waiting for 1pps observation...
+11-12-2025 15:23 Observation started...
+11-12-2025 15:23 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 15:23 Trigger sent to obs. PC [VELA].
+11-12-2025 15:25 Acquired 4.
+11-12-2025 15:25 ACQ over.
+11-12-2025 15:25 Removing Trigger file from remote machine 
+11-12-2025 15:25 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 15:23 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_15_23_1765446819.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 15:24 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_15_24_1765446849.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 15:24 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_15_24_1765446878.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 15:25 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_15_25_1765446907.PCAP_PDR
+11-12-2025 15:25 RAW PCAP data moved from Transient Buffer.
+11-12-2025 15:25 SLIP check Started ...
+11-12-2025 15:25 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 15:25 - WARNING - Number of Files: 4
+11-12-2025 15:25 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_15_23_1765446819.PCAP_PDR
+11-12-2025 15:25 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2977045707 2674 2025-12-11T09:53:07.681740
+11-12-2025 15:25 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2978928248 2703 2025-12-11T09:53:36.889669
+11-12-2025 15:25 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:25 - WARNING - 1882541 29 29207929 microseconds
+11-12-2025 15:25 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_15_24_1765446849.PCAP_PDR
+11-12-2025 15:25 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2978928249 2703 2025-12-11T09:53:36.889670
+11-12-2025 15:25 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2980810790 2733 2025-12-11T09:54:06.097552
+11-12-2025 15:25 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:25 - WARNING - 1882541 30 29207882 microseconds
+11-12-2025 15:25 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_15_24_1765446878.PCAP_PDR
+11-12-2025 15:25 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2980810791 2733 2025-12-11T09:54:06.097597
+11-12-2025 15:25 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2982693333 2762 2025-12-11T09:54:35.305479
+11-12-2025 15:25 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:25 - WARNING - 1882542 29 29207882 microseconds
+11-12-2025 15:25 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_15_25_1765446907.PCAP_PDR
+11-12-2025 15:25 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2982693334 2762 2025-12-11T09:54:35.305525
+11-12-2025 15:25 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:25 - WARNING - 2984575875 2791 2025-12-11T09:55:04.513414
+11-12-2025 15:25 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:25 - WARNING - 1882541 29 29207889 microseconds
+11-12-2025 15:25 SLIP check Finished...
+11-12-2025 15:25 Pulsar data reduction pipeline started ...
+11-12-2025 15:25 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 15:25 - WARNING - Pulsar: 1pps
+11-12-2025 15:25 - WARNING - CH selelction: 0
+11-12-2025 15:25 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 15:25 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 15:25 - WARNING - Observation start time: 2025_12_11_15_23_36
+11-12-2025 15:25 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 15:25 - WARNING - DM: 0.000000001
+11-12-2025 15:25 - WARNING - Period: 1.0
+11-12-2025 15:25 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 15:25 - WARNING - out_dada_file: 1pps_2025_12_11_15_23_36_type_0.dada
+11-12-2025 15:25 - WARNING - Number of files to process: 4
+11-12-2025 15:25 - WARNING - Files per batch:  14
+11-12-2025 15:26 - WARNING - Time taken for PDR2DADA convertion: 0:00:25.359305
+11-12-2025 15:26 - WARNING - Center_freq: 175
+11-12-2025 15:26 - WARNING - int_time: 3.0
+11-12-2025 15:26 - WARNING - nbins: 256
+11-12-2025 15:26 - WARNING - fil_chan: 256
+11-12-2025 15:26 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 15:26 - WARNING - thread: 32
+11-12-2025 15:26 - WARNING - nbit: 8
+11-12-2025 15:26 - WARNING - time_avg: 0.000256
+11-12-2025 15:26 - WARNING - MJD_START: 61020.412232528186
+11-12-2025 15:26 - WARNING - output: 1pps_61020.41_175MHz_type_0_GBD_DART
+11-12-2025 15:26 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 15:26 - WARNING - ------ DIGIFITS ------
+11-12-2025 15:26 - WARNING - ---- Search Mode FITS -------
+11-12-2025 15:26 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_15_23_36_type_0.dada -o 1pps_2025_12_11_15_23_36_type_0.dada_stokes.fits
+11-12-2025 15:27 - WARNING - ------ Total intensity FITS -------
+11-12-2025 15:27 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_15_23_36_type_0.dada -o 1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits
+11-12-2025 15:27 - WARNING - Nchan: 256
+11-12-2025 15:27 - WARNING - Nbin: 256
+11-12-2025 15:27 - WARNING - Tavg: 0.000256
+11-12-2025 15:27 - WARNING - Time taken for DIGIFITS run: 0:01:48.064262
+11-12-2025 15:27 - WARNING - ------ DSPSR ------
+11-12-2025 15:27 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 15:27 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_15_23_36_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.41_175MHz_type_0_GBD_DART
+11-12-2025 15:28 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 15:28 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_15_23_36_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.41_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 15:28 - WARNING - Time taken for DSPSR run: 0:00:16.249035
+11-12-2025 15:28 - WARNING - ------ PSREDIT ------
+11-12-2025 15:28 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 15:28 - WARNING - Time taken for PSREDIT run: 0:00:00.440961
+11-12-2025 15:28 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 15:28 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 15:28 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.138518
+11-12-2025 15:28 - WARNING - ------ PDMP ------
+11-12-2025 15:28 --- PRESTO ---
+11-12-2025 15:28 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 15:28 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits
+11-12-2025 15:28 --- RFIFIND ---
+11-12-2025 15:28 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits
+11-12-2025 15:28 --- PREPDATA ---
+11-12-2025 15:28 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits
+11-12-2025 15:28 --- REALFFT ---
+11-12-2025 15:28 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits.dat
+11-12-2025 15:28 --- ACCELSEARCH ---
+11-12-2025 15:28 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_15_23_36_type_0.dada_intensity.fits.fft
+11-12-2025 15:28 Observation Over.
+11-12-2025 15:33 Waiting for 1pps observation...
+11-12-2025 15:33 Observation started...
+11-12-2025 15:33 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 15:33 Trigger sent to obs. PC [VELA].
+11-12-2025 15:35 Acquired 4.
+11-12-2025 15:35 ACQ over.
+11-12-2025 15:35 Removing Trigger file from remote machine 
+11-12-2025 15:35 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 15:33 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_15_33_1765447404.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 15:33 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_15_33_1765447433.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 15:34 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_15_34_1765447462.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 15:34 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_15_34_1765447491.PCAP_PDR
+11-12-2025 15:35 RAW PCAP data moved from Transient Buffer.
+11-12-2025 15:35 SLIP check Started ...
+11-12-2025 15:35 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 15:35 - WARNING - Number of Files: 4
+11-12-2025 15:35 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_15_33_1765447404.PCAP_PDR
+11-12-2025 15:35 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3014696551 3258 2025-12-11T10:02:51.839999
+11-12-2025 15:35 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3016579092 3288 2025-12-11T10:03:21.047931
+11-12-2025 15:35 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:35 - WARNING - 1882541 30 29207932 microseconds
+11-12-2025 15:35 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_15_33_1765447433.PCAP_PDR
+11-12-2025 15:35 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3016579093 3288 2025-12-11T10:03:21.047932
+11-12-2025 15:35 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3018461634 3317 2025-12-11T10:03:50.255812
+11-12-2025 15:35 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:35 - WARNING - 1882541 29 29207880 microseconds
+11-12-2025 15:35 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_15_34_1765447462.PCAP_PDR
+11-12-2025 15:35 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3018461635 3317 2025-12-11T10:03:50.255865
+11-12-2025 15:35 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3020344176 3346 2025-12-11T10:04:19.463749
+11-12-2025 15:35 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:35 - WARNING - 1882541 29 29207884 microseconds
+11-12-2025 15:35 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_15_34_1765447491.PCAP_PDR
+11-12-2025 15:35 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3020344177 3346 2025-12-11T10:04:19.463750
+11-12-2025 15:35 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 15:35 - WARNING - 3022226718 3375 2025-12-11T10:04:48.671675
+11-12-2025 15:35 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 15:35 - WARNING - 1882541 29 29207925 microseconds
+11-12-2025 15:35 SLIP check Finished...
+11-12-2025 15:35 Pulsar data reduction pipeline started ...
+11-12-2025 15:35 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 15:35 - WARNING - Pulsar: 1pps
+11-12-2025 15:35 - WARNING - CH selelction: 0
+11-12-2025 15:35 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 15:35 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 15:35 - WARNING - Observation start time: 2025_12_11_15_33_21
+11-12-2025 15:35 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 15:35 - WARNING - DM: 0.000000001
+11-12-2025 15:35 - WARNING - Period: 1.0
+11-12-2025 15:35 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 15:35 - WARNING - out_dada_file: 1pps_2025_12_11_15_33_21_type_0.dada
+11-12-2025 15:35 - WARNING - Number of files to process: 4
+11-12-2025 15:35 - WARNING - Files per batch:  14
+11-12-2025 15:36 - WARNING - Time taken for PDR2DADA convertion: 0:00:26.049285
+11-12-2025 15:36 - WARNING - Center_freq: 175
+11-12-2025 15:36 - WARNING - int_time: 3.0
+11-12-2025 15:36 - WARNING - nbins: 256
+11-12-2025 15:36 - WARNING - fil_chan: 256
+11-12-2025 15:36 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 15:36 - WARNING - thread: 32
+11-12-2025 15:36 - WARNING - nbit: 8
+11-12-2025 15:36 - WARNING - time_avg: 0.000256
+11-12-2025 15:36 - WARNING - MJD_START: 61020.41899362105
+11-12-2025 15:36 - WARNING - output: 1pps_61020.42_175MHz_type_0_GBD_DART
+11-12-2025 15:36 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 15:36 - WARNING - ------ DIGIFITS ------
+11-12-2025 15:36 - WARNING - ---- Search Mode FITS -------
+11-12-2025 15:36 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_15_33_21_type_0.dada -o 1pps_2025_12_11_15_33_21_type_0.dada_stokes.fits
+11-12-2025 15:37 - WARNING - ------ Total intensity FITS -------
+11-12-2025 15:37 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_15_33_21_type_0.dada -o 1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits
+11-12-2025 15:37 - WARNING - Nchan: 256
+11-12-2025 15:37 - WARNING - Nbin: 256
+11-12-2025 15:37 - WARNING - Tavg: 0.000256
+11-12-2025 15:37 - WARNING - Time taken for DIGIFITS run: 0:01:49.077395
+11-12-2025 15:37 - WARNING - ------ DSPSR ------
+11-12-2025 15:37 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 15:37 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_15_33_21_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.42_175MHz_type_0_GBD_DART
+11-12-2025 15:38 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 15:38 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_15_33_21_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.42_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 15:38 - WARNING - Time taken for DSPSR run: 0:00:15.874122
+11-12-2025 15:38 - WARNING - ------ PSREDIT ------
+11-12-2025 15:38 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 15:38 - WARNING - Time taken for PSREDIT run: 0:00:00.376701
+11-12-2025 15:38 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 15:38 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 15:38 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.163012
+11-12-2025 15:38 - WARNING - ------ PDMP ------
+11-12-2025 15:38 --- PRESTO ---
+11-12-2025 15:38 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 15:38 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits
+11-12-2025 15:38 --- RFIFIND ---
+11-12-2025 15:38 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits
+11-12-2025 15:38 --- PREPDATA ---
+11-12-2025 15:38 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits
+11-12-2025 15:38 --- REALFFT ---
+11-12-2025 15:38 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits.dat
+11-12-2025 15:38 --- ACCELSEARCH ---
+11-12-2025 15:38 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_15_33_21_type_0.dada_intensity.fits.fft
+11-12-2025 15:38 Observation Over.
+11-12-2025 16:16 Waiting for 1pps observation...
+11-12-2025 16:16 Observation started...
+11-12-2025 16:16 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 16:16 Trigger sent to obs. PC [VELA].
+11-12-2025 16:17 Acquired 4.
+11-12-2025 16:17 ACQ over.
+11-12-2025 16:17 Removing Trigger file from remote machine 
+11-12-2025 16:17 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 15:35 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_15_35_1765447520.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 16:16 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_16_16_1765449974.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 16:16 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_16_16_1765450003.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 16:17 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_16_17_1765450032.PCAP_PDR
+11-12-2025 16:17 RAW PCAP data moved from Transient Buffer.
+11-12-2025 16:17 SLIP check Started ...
+11-12-2025 16:17 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 16:17 - WARNING - Number of Files: 4
+11-12-2025 16:17 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_15_35_1765447520.PCAP_PDR
+11-12-2025 16:17 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3022226719 3375 2025-12-11T10:04:48.671675
+11-12-2025 16:17 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3024109260 3404 2025-12-11T10:05:17.879559
+11-12-2025 16:17 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:17 - WARNING - 1882541 29 29207884 microseconds
+11-12-2025 16:17 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_16_16_1765449974.PCAP_PDR
+11-12-2025 16:17 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3180360261 5829 2025-12-11T10:45:42.142005
+11-12-2025 16:17 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3182242802 5858 2025-12-11T10:46:11.349933
+11-12-2025 16:17 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:17 - WARNING - 1882541 29 29207928 microseconds
+11-12-2025 16:17 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_16_16_1765450003.PCAP_PDR
+11-12-2025 16:17 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3182242803 5858 2025-12-11T10:46:11.349934
+11-12-2025 16:17 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3184125345 5887 2025-12-11T10:46:40.557893
+11-12-2025 16:17 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:17 - WARNING - 1882542 29 29207959 microseconds
+11-12-2025 16:17 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_16_17_1765450032.PCAP_PDR
+11-12-2025 16:17 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3184125346 5887 2025-12-11T10:46:40.557894
+11-12-2025 16:17 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:17 - WARNING - 3186007887 5916 2025-12-11T10:47:09.765859
+11-12-2025 16:17 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:17 - WARNING - 1882541 29 29207965 microseconds
+11-12-2025 16:17 SLIP check Finished...
+11-12-2025 16:17 Pulsar data reduction pipeline started ...
+11-12-2025 16:17 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 16:17 - WARNING - Pulsar: 1pps
+11-12-2025 16:17 - WARNING - CH selelction: 0
+11-12-2025 16:17 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 16:17 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 16:17 - WARNING - Observation start time: 2025_12_11_15_35_17
+11-12-2025 16:17 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 16:17 - WARNING - DM: 0.000000001
+11-12-2025 16:17 - WARNING - Period: 1.0
+11-12-2025 16:17 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 16:17 - WARNING - out_dada_file: 1pps_2025_12_11_15_35_17_type_0.dada
+11-12-2025 16:17 - WARNING - Number of files to process: 4
+11-12-2025 16:17 - WARNING - Files per batch:  14
+11-12-2025 16:18 - WARNING - Time taken for PDR2DADA convertion: 0:00:26.091786
+11-12-2025 16:18 - WARNING - Center_freq: 175
+11-12-2025 16:18 - WARNING - int_time: 3.0
+11-12-2025 16:18 - WARNING - nbins: 256
+11-12-2025 16:18 - WARNING - fil_chan: 256
+11-12-2025 16:18 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 16:18 - WARNING - thread: 32
+11-12-2025 16:18 - WARNING - nbit: 8
+11-12-2025 16:18 - WARNING - time_avg: 0.000256
+11-12-2025 16:18 - WARNING - MJD_START: 61020.42034583969
+11-12-2025 16:18 - WARNING - output: 1pps_61020.42_175MHz_type_0_GBD_DART
+11-12-2025 16:18 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 16:18 - WARNING - ------ DIGIFITS ------
+11-12-2025 16:18 - WARNING - ---- Search Mode FITS -------
+11-12-2025 16:18 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_15_35_17_type_0.dada -o 1pps_2025_12_11_15_35_17_type_0.dada_stokes.fits
+11-12-2025 16:19 - WARNING - ------ Total intensity FITS -------
+11-12-2025 16:19 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_15_35_17_type_0.dada -o 1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits
+11-12-2025 16:20 - WARNING - Nchan: 256
+11-12-2025 16:20 - WARNING - Nbin: 256
+11-12-2025 16:20 - WARNING - Tavg: 0.000256
+11-12-2025 16:20 - WARNING - Time taken for DIGIFITS run: 0:01:48.244500
+11-12-2025 16:20 - WARNING - ------ DSPSR ------
+11-12-2025 16:20 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 16:20 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_15_35_17_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.42_175MHz_type_0_GBD_DART
+11-12-2025 16:20 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 16:20 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_15_35_17_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.42_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 16:20 - WARNING - Time taken for DSPSR run: 0:00:15.962519
+11-12-2025 16:20 - WARNING - ------ PSREDIT ------
+11-12-2025 16:20 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 16:20 - WARNING - Time taken for PSREDIT run: 0:00:00.419909
+11-12-2025 16:20 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 16:20 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 16:20 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.138802
+11-12-2025 16:20 - WARNING - ------ PDMP ------
+11-12-2025 16:20 --- PRESTO ---
+11-12-2025 16:20 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 16:20 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits
+11-12-2025 16:20 --- RFIFIND ---
+11-12-2025 16:20 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits
+11-12-2025 16:20 --- PREPDATA ---
+11-12-2025 16:20 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits
+11-12-2025 16:20 --- REALFFT ---
+11-12-2025 16:20 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits.dat
+11-12-2025 16:20 --- ACCELSEARCH ---
+11-12-2025 16:20 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_15_35_17_type_0.dada_intensity.fits.fft
+11-12-2025 16:20 Observation Over.
+11-12-2025 16:26 Waiting for 1pps observation...
+11-12-2025 16:26 Observation started...
+11-12-2025 16:26 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 16:26 Trigger sent to obs. PC [VELA].
+11-12-2025 16:28 Acquired 4.
+11-12-2025 16:28 ACQ over.
+11-12-2025 16:28 Removing Trigger file from remote machine 
+11-12-2025 16:28 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 16:26 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_16_26_1765450587.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 16:26 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_16_26_1765450616.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 16:27 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_16_27_1765450646.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 16:27 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_16_27_1765450675.PCAP_PDR
+11-12-2025 16:28 RAW PCAP data moved from Transient Buffer.
+11-12-2025 16:28 SLIP check Started ...
+11-12-2025 16:28 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 16:28 - WARNING - Number of Files: 4
+11-12-2025 16:28 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_16_26_1765450587.PCAP_PDR
+11-12-2025 16:28 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3219893647 6442 2025-12-11T10:55:55.504350
+11-12-2025 16:28 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3221776188 6471 2025-12-11T10:56:24.711916
+11-12-2025 16:28 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:28 - WARNING - 1882541 29 29207566 microseconds
+11-12-2025 16:28 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_16_26_1765450616.PCAP_PDR
+11-12-2025 16:28 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3221776189 6471 2025-12-11T10:56:24.711917
+11-12-2025 16:28 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3223658730 6500 2025-12-11T10:56:53.919546
+11-12-2025 16:28 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:28 - WARNING - 1882541 29 29207629 microseconds
+11-12-2025 16:28 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_16_27_1765450646.PCAP_PDR
+11-12-2025 16:28 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3223658731 6500 2025-12-11T10:56:53.919547
+11-12-2025 16:28 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3225541272 6530 2025-12-11T10:57:23.127147
+11-12-2025 16:28 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:28 - WARNING - 1882541 30 29207600 microseconds
+11-12-2025 16:28 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_16_27_1765450675.PCAP_PDR
+11-12-2025 16:28 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3225541273 6530 2025-12-11T10:57:23.127194
+11-12-2025 16:28 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 16:28 - WARNING - 3227423815 6559 2025-12-11T10:57:52.334803
+11-12-2025 16:28 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 16:28 - WARNING - 1882542 29 29207609 microseconds
+11-12-2025 16:28 SLIP check Finished...
+11-12-2025 16:28 Pulsar data reduction pipeline started ...
+11-12-2025 16:28 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 16:28 - WARNING - Pulsar: 1pps
+11-12-2025 16:28 - WARNING - CH selelction: 0
+11-12-2025 16:28 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 16:28 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 16:28 - WARNING - Observation start time: 2025_12_11_16_26_24
+11-12-2025 16:28 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 16:28 - WARNING - DM: 0.000000001
+11-12-2025 16:28 - WARNING - Period: 1.0
+11-12-2025 16:28 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 16:28 - WARNING - out_dada_file: 1pps_2025_12_11_16_26_24_type_0.dada
+11-12-2025 16:28 - WARNING - Number of files to process: 4
+11-12-2025 16:28 - WARNING - Files per batch:  14
+11-12-2025 16:28 - WARNING - Time taken for PDR2DADA convertion: 0:00:25.669462
+11-12-2025 16:28 - WARNING - Center_freq: 175
+11-12-2025 16:28 - WARNING - int_time: 3.0
+11-12-2025 16:28 - WARNING - nbins: 256
+11-12-2025 16:28 - WARNING - fil_chan: 256
+11-12-2025 16:28 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 16:28 - WARNING - thread: 32
+11-12-2025 16:28 - WARNING - nbit: 8
+11-12-2025 16:28 - WARNING - time_avg: 0.000256
+11-12-2025 16:28 - WARNING - MJD_START: 61020.455841607836
+11-12-2025 16:28 - WARNING - output: 1pps_61020.46_175MHz_type_0_GBD_DART
+11-12-2025 16:28 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 16:28 - WARNING - ------ DIGIFITS ------
+11-12-2025 16:28 - WARNING - ---- Search Mode FITS -------
+11-12-2025 16:28 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_16_26_24_type_0.dada -o 1pps_2025_12_11_16_26_24_type_0.dada_stokes.fits
+11-12-2025 16:29 - WARNING - ------ Total intensity FITS -------
+11-12-2025 16:29 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_16_26_24_type_0.dada -o 1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits
+11-12-2025 16:30 - WARNING - Nchan: 256
+11-12-2025 16:30 - WARNING - Nbin: 256
+11-12-2025 16:30 - WARNING - Tavg: 0.000256
+11-12-2025 16:30 - WARNING - Time taken for DIGIFITS run: 0:01:45.612963
+11-12-2025 16:30 - WARNING - ------ DSPSR ------
+11-12-2025 16:30 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 16:30 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_16_26_24_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.46_175MHz_type_0_GBD_DART
+11-12-2025 16:30 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 16:30 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_16_26_24_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.46_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 16:30 - WARNING - Time taken for DSPSR run: 0:00:16.504203
+11-12-2025 16:30 - WARNING - ------ PSREDIT ------
+11-12-2025 16:30 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 16:30 - WARNING - Time taken for PSREDIT run: 0:00:00.508643
+11-12-2025 16:30 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 16:30 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 16:30 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.175898
+11-12-2025 16:30 - WARNING - ------ PDMP ------
+11-12-2025 16:30 --- PRESTO ---
+11-12-2025 16:30 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 16:30 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits
+11-12-2025 16:30 --- RFIFIND ---
+11-12-2025 16:30 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits
+11-12-2025 16:31 --- PREPDATA ---
+11-12-2025 16:31 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits
+11-12-2025 16:31 --- REALFFT ---
+11-12-2025 16:31 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits.dat
+11-12-2025 16:31 --- ACCELSEARCH ---
+11-12-2025 16:31 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_16_26_24_type_0.dada_intensity.fits.fft
+11-12-2025 16:31 Observation Over.
+11-12-2025 17:09 Waiting for 1pps observation...
+11-12-2025 17:09 Observation started...
+11-12-2025 17:09 Pulsar: 1pps , parfile: /home/dsp/parfiles/1pps.par , DM: 0.000000001
+11-12-2025 17:09 Trigger sent to obs. PC [VELA].
+11-12-2025 17:11 Acquired 4.
+11-12-2025 17:11 ACQ over.
+11-12-2025 17:11 Removing Trigger file from remote machine 
+11-12-2025 17:11 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Dec 11 17:09 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_17_09_1765453158.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 17:09 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_17_09_1765453187.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 17:10 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_11_12_2025_17_10_1765453216.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Dec 11 17:10 /media/dsp/dsp_singularity/data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_11_12_2025_17_10_1765453245.PCAP_PDR
+11-12-2025 17:11 RAW PCAP data moved from Transient Buffer.
+11-12-2025 17:11 SLIP check Started ...
+11-12-2025 17:11 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 17:11 - WARNING - Number of Files: 4
+11-12-2025 17:11 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_17_09_1765453158.PCAP_PDR
+11-12-2025 17:11 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3385557358 9012 2025-12-11T11:38:45.799360
+11-12-2025 17:11 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3387439899 9042 2025-12-11T11:39:15.007325
+11-12-2025 17:11 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 17:11 - WARNING - 1882541 30 29207965 microseconds
+11-12-2025 17:11 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_17_09_1765453187.PCAP_PDR
+11-12-2025 17:11 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3387439900 9042 2025-12-11T11:39:15.007375
+11-12-2025 17:11 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3389322441 9071 2025-12-11T11:39:44.215339
+11-12-2025 17:11 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 17:11 - WARNING - 1882541 29 29207964 microseconds
+11-12-2025 17:11 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data001.pcap_11_12_2025_17_10_1765453216.PCAP_PDR
+11-12-2025 17:11 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3389322442 9071 2025-12-11T11:39:44.215339
+11-12-2025 17:11 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3391204983 9100 2025-12-11T11:40:13.423350
+11-12-2025 17:11 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 17:11 - WARNING - 1882541 29 29208011 microseconds
+11-12-2025 17:11 - WARNING - No packet loss: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025/PDR_GULP_data000.pcap_11_12_2025_17_10_1765453245.PCAP_PDR
+11-12-2025 17:11 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3391204984 9100 2025-12-11T11:40:13.423350
+11-12-2025 17:11 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+11-12-2025 17:11 - WARNING - 3393087525 9129 2025-12-11T11:40:42.631309
+11-12-2025 17:11 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+11-12-2025 17:11 - WARNING - 1882541 29 29207959 microseconds
+11-12-2025 17:11 SLIP check Finished...
+11-12-2025 17:11 Pulsar data reduction pipeline started ...
+11-12-2025 17:11 - WARNING - Data Directory: /media/dsp/dsp_singularity/data/GBD_TRANSIENT_BUFFER/1pps/11_12_2025
+11-12-2025 17:11 - WARNING - Pulsar: 1pps
+11-12-2025 17:11 - WARNING - CH selelction: 0
+11-12-2025 17:11 - WARNING - Phase file: /media/dsp/dsp_singularity/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+11-12-2025 17:11 - WARNING - Obs. logfile: /media/dsp/dsp_singularity/PDR_acquire_setup/master_obs_log/1pps_11_12_2025_observation.log
+11-12-2025 17:11 - WARNING - Observation start time: 2025_12_11_17_09_15
+11-12-2025 17:11 - WARNING - parfile: /home/dsp/parfiles/1pps.par
+11-12-2025 17:11 - WARNING - DM: 0.000000001
+11-12-2025 17:11 - WARNING - Period: 1.0
+11-12-2025 17:11 - WARNING - RA_DEC: 00:01:00.00+00:01:00.00
+11-12-2025 17:11 - WARNING - out_dada_file: 1pps_2025_12_11_17_09_15_type_0.dada
+11-12-2025 17:11 - WARNING - Number of files to process: 4
+11-12-2025 17:11 - WARNING - Files per batch:  14
+11-12-2025 17:11 - WARNING - Time taken for PDR2DADA convertion: 0:00:25.630391
+11-12-2025 17:11 - WARNING - Center_freq: 175
+11-12-2025 17:11 - WARNING - int_time: 3.0
+11-12-2025 17:11 - WARNING - nbins: 256
+11-12-2025 17:11 - WARNING - fil_chan: 256
+11-12-2025 17:11 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13
+11-12-2025 17:11 - WARNING - thread: 32
+11-12-2025 17:11 - WARNING - nbit: 8
+11-12-2025 17:11 - WARNING - time_avg: 0.000256
+11-12-2025 17:11 - WARNING - MJD_START: 61020.48559038078
+11-12-2025 17:11 - WARNING - output: 1pps_61020.49_175MHz_type_0_GBD_DART
+11-12-2025 17:11 - WARNING - singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 17:11 - WARNING - ------ DIGIFITS ------
+11-12-2025 17:11 - WARNING - ---- Search Mode FITS -------
+11-12-2025 17:11 - WARNING - digifits_ful_stokes_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000256 1pps_2025_12_11_17_09_15_type_0.dada -o 1pps_2025_12_11_17_09_15_type_0.dada_stokes.fits
+11-12-2025 17:12 - WARNING - ------ Total intensity FITS -------
+11-12-2025 17:12 - WARNING - digifits_total_intensity_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000256 1pps_2025_12_11_17_09_15_type_0.dada -o 1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits
+11-12-2025 17:13 - WARNING - Nchan: 256
+11-12-2025 17:13 - WARNING - Nbin: 256
+11-12-2025 17:13 - WARNING - Tavg: 0.000256
+11-12-2025 17:13 - WARNING - Time taken for DIGIFITS run: 0:01:49.485849
+11-12-2025 17:13 - WARNING - ------ DSPSR ------
+11-12-2025 17:13 - WARNING - ------- Coherent Dedispersion Folded archive -------
+11-12-2025 17:13 - WARNING - dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_17_09_15_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -F 256:D -N 1pps -a PSRFITS -A -e .fits -O 1pps_61020.49_175MHz_type_0_GBD_DART
+11-12-2025 17:13 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+11-12-2025 17:13 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  dspsr 1pps_2025_12_11_17_09_15_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13 -t 32 -E /home/dsp/parfiles/1pps.par -L 3.0 -b 256 -N 1pps -A -e .fits -O 1pps_61020.49_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+11-12-2025 17:13 - WARNING - Time taken for DSPSR run: 0:00:15.836875
+11-12-2025 17:13 - WARNING - ------ PSREDIT ------
+11-12-2025 17:13 - WARNING - psredit_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  psredit -c name=1pps,be:name=GSB,coord=00:01:00.00+00:01:00.00 -m *_GBD_DART*fits
+11-12-2025 17:13 - WARNING - Time taken for PSREDIT run: 0:00:00.481866
+11-12-2025 17:13 - WARNING - ------ Iterative RFI Cleaner ------
+11-12-2025 17:13 - WARNING - Iterative_cleaner_cmd: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   python3 /media/dsp/dsp_singularity/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+11-12-2025 17:13 - WARNING - Time taken for Iterative_cleaner run: 0:00:00.143380
+11-12-2025 17:13 - WARNING - ------ PDMP ------
+11-12-2025 17:13 --- PRESTO ---
+11-12-2025 17:13 singularity_container: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif  
+11-12-2025 17:13 Filterbank to Process for PULSAR: 1pps with DM:0.000000001 : 1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits
+11-12-2025 17:13 --- RFIFIND ---
+11-12-2025 17:13 RFIFIND: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   rfifind -time 2.0 -o 1pps 1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits
+11-12-2025 17:13 --- PREPDATA ---
+11-12-2025 17:13 PREPDATA: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   prepdata -nobary -o 1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits -dm 0.000000001 -mask 1pps_rfifind.mask 1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits
+11-12-2025 17:13 --- REALFFT ---
+11-12-2025 17:13 REALFFT: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   realfft  1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits.dat
+11-12-2025 17:13 --- ACCELSEARCH ---
+11-12-2025 17:13 ACCELSEARCH: singularity exec /media/dsp/dsp_singularity/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  1pps_2025_12_11_17_09_15_type_0.dada_intensity.fits.fft
+11-12-2025 17:14 Observation Over.

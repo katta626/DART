@@ -1,0 +1,723 @@
+30-07-2026 09:03 Waiting for J0534+2200 observation...
+30-07-2026 09:08 Observation started...
+30-07-2026 09:08 Pulsar: J0534+2200 , parfile: /home/dsp/parfiles/J0534+2200.par , DM: 56.7143
+30-07-2026 09:08 Trigger sent to obs. PC [VELA].
+30-07-2026 09:43 Acquired 80.
+30-07-2026 09:43 ACQ over.
+30-07-2026 09:43 Removing Trigger file from remote machine 
+30-07-2026 09:43 Observation stoped.
+-rw------- 1 dsp dsp 2.0G Jul 30 09:04 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_04_1785382455.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:04 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_04_1785382484.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:05 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_05_1785382514.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:05 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_05_1785382543.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:06 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_06_1785382572.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:06 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_06_1785382601.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:07 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_07_1785382630.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:07 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_07_1785382660.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:08 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_08_1785382689.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:08 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_08_1785382718.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:09 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_09_1785382747.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:09 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_09_1785382776.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:10 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_10_1785382806.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:10 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_10_1785382835.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:11 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_11_1785382864.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:11 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_11_1785382893.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:11 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_12_1785382922.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:12 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_12_1785382952.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:12 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_13_1785382981.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:13 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_13_1785383010.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:13 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_13_1785383039.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:14 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_14_1785383069.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:14 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_14_1785383098.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:15 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_15_1785383127.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:15 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_15_1785383156.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:16 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_16_1785383185.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:16 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_16_1785383215.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:17 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_17_1785383244.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:17 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_17_1785383273.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:18 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_18_1785383302.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:18 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_18_1785383331.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:19 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_19_1785383361.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:19 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_19_1785383390.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:20 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_20_1785383419.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:20 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_20_1785383448.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:21 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_21_1785383477.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:21 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_21_1785383507.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:22 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_22_1785383536.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:22 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_22_1785383565.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:23 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_23_1785383594.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:23 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_23_1785383623.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:24 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_24_1785383653.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:24 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_24_1785383682.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:25 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_25_1785383711.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:25 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_25_1785383740.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:26 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_26_1785383770.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:26 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_26_1785383799.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:27 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_27_1785383828.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:27 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_27_1785383857.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:28 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_28_1785383886.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:28 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_28_1785383916.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:29 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_29_1785383945.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:29 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_29_1785383974.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:30 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_30_1785384003.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:30 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_30_1785384032.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:30 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_31_1785384062.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:31 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_31_1785384091.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:31 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_32_1785384120.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:32 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_32_1785384149.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:32 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_32_1785384178.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:33 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_33_1785384208.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:33 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_33_1785384237.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:34 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_34_1785384266.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:34 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_34_1785384295.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:35 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_35_1785384324.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:35 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_35_1785384354.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:36 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_36_1785384383.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:36 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_36_1785384412.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:37 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_37_1785384441.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:37 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_37_1785384471.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:38 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_38_1785384500.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:38 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_38_1785384529.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:39 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_39_1785384558.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:39 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_39_1785384587.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:40 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_40_1785384617.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:40 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_40_1785384646.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:41 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_41_1785384675.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:41 /data/TRANSIENT_BUFFER/PDR_GULP_data002.pcap_30_07_2026_09_41_1785384704.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:42 /data/TRANSIENT_BUFFER/PDR_GULP_data000.pcap_30_07_2026_09_42_1785384733.PCAP_PDR
+-rw------- 1 dsp dsp 2.0G Jul 30 09:42 /data/TRANSIENT_BUFFER/PDR_GULP_data001.pcap_30_07_2026_09_42_1785384763.PCAP_PDR
+30-07-2026 09:43 RAW PCAP data moved from Transient Buffer.
+30-07-2026 09:43 SLIP check Started ...
+30-07-2026 09:43 - WARNING - Data Directory: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026
+30-07-2026 09:43 - WARNING - Number of Files: 80
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_04_1785382455.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2619305376 49447 2026-07-30T03:33:43.462725
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2621187917 49476 2026-07-30T03:34:12.670547
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207822 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_04_1785382484.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2621187918 49476 2026-07-30T03:34:12.670547
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2623070459 49505 2026-07-30T03:34:41.878338
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207791 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_05_1785382514.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2623070460 49505 2026-07-30T03:34:41.878339
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2624953001 49535 2026-07-30T03:35:11.086162
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207823 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_05_1785382543.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2624953002 49535 2026-07-30T03:35:11.086162
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2626835544 49564 2026-07-30T03:35:40.293955
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207793 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_06_1785382572.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2626835545 49564 2026-07-30T03:35:40.294035
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2628718086 49593 2026-07-30T03:36:09.501730
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207695 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_06_1785382601.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2628718087 49593 2026-07-30T03:36:09.501824
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2630600628 49622 2026-07-30T03:36:38.709572
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207748 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_07_1785382630.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2630600629 49622 2026-07-30T03:36:38.709572
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2632483170 49651 2026-07-30T03:37:07.917427
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207855 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_07_1785382660.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2632483171 49651 2026-07-30T03:37:07.917427
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2634365712 49681 2026-07-30T03:37:37.125167
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207740 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_08_1785382689.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2634365713 49681 2026-07-30T03:37:37.125219
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2636248254 49710 2026-07-30T03:38:06.332973
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207754 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_08_1785382718.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2636248255 49710 2026-07-30T03:38:06.333067
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2638130797 49739 2026-07-30T03:38:35.540818
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207751 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_09_1785382747.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2638130798 49739 2026-07-30T03:38:35.540818
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2640013339 49768 2026-07-30T03:39:04.748606
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207788 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_09_1785382776.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2640013340 49768 2026-07-30T03:39:04.748659
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2641895881 49797 2026-07-30T03:39:33.956431
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207772 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_10_1785382806.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2641895882 49797 2026-07-30T03:39:33.956432
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2643778423 49827 2026-07-30T03:40:03.164229
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207797 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_10_1785382835.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2643778424 49827 2026-07-30T03:40:03.164230
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2645660965 49856 2026-07-30T03:40:32.372254
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208024 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_11_1785382864.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2645660966 49856 2026-07-30T03:40:32.372255
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2647543507 49885 2026-07-30T03:41:01.580384
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208129 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_11_1785382893.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2647543508 49885 2026-07-30T03:41:01.580436
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2649426050 49914 2026-07-30T03:41:30.788586
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29208150 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_12_1785382922.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2649426051 49914 2026-07-30T03:41:30.788587
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2651308592 49944 2026-07-30T03:41:59.996691
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29208104 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_12_1785382952.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2651308593 49944 2026-07-30T03:41:59.996692
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2653191134 49973 2026-07-30T03:42:29.204765
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208073 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_13_1785382981.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2653191135 49973 2026-07-30T03:42:29.204765
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2655073676 50002 2026-07-30T03:42:58.412877
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208112 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_13_1785383010.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2655073677 50002 2026-07-30T03:42:58.412877
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2656956218 50031 2026-07-30T03:43:27.620924
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208047 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_13_1785383039.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2656956219 50031 2026-07-30T03:43:27.620976
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2658838761 50060 2026-07-30T03:43:56.829010
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29208034 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_14_1785383069.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2658838762 50060 2026-07-30T03:43:56.829063
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2660721303 50090 2026-07-30T03:44:26.037074
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29208011 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_14_1785383098.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2660721304 50090 2026-07-30T03:44:26.037074
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2662603845 50119 2026-07-30T03:44:55.245114
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208040 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_15_1785383127.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2662603846 50119 2026-07-30T03:44:55.245114
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2664486387 50148 2026-07-30T03:45:24.453156
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208042 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_15_1785383156.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2664486388 50148 2026-07-30T03:45:24.453156
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2666368929 50177 2026-07-30T03:45:53.661183
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208027 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_16_1785383185.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2666368930 50177 2026-07-30T03:45:53.661183
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2668251471 50206 2026-07-30T03:46:22.869165
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207982 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_16_1785383215.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2668251472 50206 2026-07-30T03:46:22.869256
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2670134014 50236 2026-07-30T03:46:52.077198
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 30 29207942 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_17_1785383244.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2670134015 50236 2026-07-30T03:46:52.077198
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2672016556 50265 2026-07-30T03:47:21.285174
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207976 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_17_1785383273.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2672016557 50265 2026-07-30T03:47:21.285265
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2673899098 50294 2026-07-30T03:47:50.493190
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207925 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_18_1785383302.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2673899099 50294 2026-07-30T03:47:50.493190
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2675781640 50323 2026-07-30T03:48:19.701130
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207940 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_18_1785383331.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2675781641 50323 2026-07-30T03:48:19.701130
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2677664182 50352 2026-07-30T03:48:48.909151
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29208021 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_19_1785383361.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2677664183 50352 2026-07-30T03:48:48.909151
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2679546724 50382 2026-07-30T03:49:18.117075
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207924 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_19_1785383390.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2679546725 50382 2026-07-30T03:49:18.117076
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2681429267 50411 2026-07-30T03:49:47.325046
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207970 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_20_1785383419.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2681429268 50411 2026-07-30T03:49:47.325135
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2683311809 50440 2026-07-30T03:50:16.533004
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207869 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_20_1785383448.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2683311810 50440 2026-07-30T03:50:16.533004
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2685194351 50469 2026-07-30T03:50:45.740974
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207970 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_21_1785383477.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2685194352 50469 2026-07-30T03:50:45.740974
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2687076893 50498 2026-07-30T03:51:14.948909
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207935 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_21_1785383507.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2687076894 50498 2026-07-30T03:51:14.948909
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2688959435 50528 2026-07-30T03:51:44.156829
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207920 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_22_1785383536.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2688959436 50528 2026-07-30T03:51:44.156829
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2690841977 50557 2026-07-30T03:52:13.364799
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207970 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_22_1785383565.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2690841978 50557 2026-07-30T03:52:13.364800
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2692724520 50586 2026-07-30T03:52:42.572756
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207956 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_23_1785383594.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2692724521 50586 2026-07-30T03:52:42.572756
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2694607062 50615 2026-07-30T03:53:11.780633
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207877 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_23_1785383623.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2694607063 50615 2026-07-30T03:53:11.780633
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2696489604 50644 2026-07-30T03:53:40.988536
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207903 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_24_1785383653.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2696489605 50644 2026-07-30T03:53:40.988624
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2698372146 50674 2026-07-30T03:54:10.196467
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207843 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_24_1785383682.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2698372147 50674 2026-07-30T03:54:10.196467
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2700254688 50703 2026-07-30T03:54:39.404423
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207956 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_25_1785383711.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2700254689 50703 2026-07-30T03:54:39.404424
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2702137230 50732 2026-07-30T03:55:08.612250
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207826 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_25_1785383740.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2702137231 50732 2026-07-30T03:55:08.612314
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2704019773 50761 2026-07-30T03:55:37.820202
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207888 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_26_1785383770.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2704019774 50761 2026-07-30T03:55:37.820203
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2705902315 50791 2026-07-30T03:56:07.028101
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207898 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_26_1785383799.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2705902316 50791 2026-07-30T03:56:07.028101
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2707784857 50820 2026-07-30T03:56:36.236062
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207961 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_27_1785383828.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2707784858 50820 2026-07-30T03:56:36.236063
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2709667399 50849 2026-07-30T03:57:05.443882
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207819 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_27_1785383857.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2709667400 50849 2026-07-30T03:57:05.443883
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2711549941 50878 2026-07-30T03:57:34.651755
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207872 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_28_1785383886.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2711549942 50878 2026-07-30T03:57:34.651809
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2713432483 50907 2026-07-30T03:58:03.859666
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207857 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_28_1785383916.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2713432484 50907 2026-07-30T03:58:03.859666
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2715315026 50937 2026-07-30T03:58:33.067597
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 30 29207931 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_29_1785383945.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2715315027 50937 2026-07-30T03:58:33.067598
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2717197568 50966 2026-07-30T03:59:02.275474
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207876 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_29_1785383974.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2717197569 50966 2026-07-30T03:59:02.275555
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2719080110 50995 2026-07-30T03:59:31.483334
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207779 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_30_1785384003.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2719080111 50995 2026-07-30T03:59:31.483426
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2720962652 51024 2026-07-30T04:00:00.691244
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207818 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_30_1785384032.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2720962653 51024 2026-07-30T04:00:00.691244
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2722845194 51053 2026-07-30T04:00:29.899132
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207888 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_31_1785384062.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2722845195 51053 2026-07-30T04:00:29.899132
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2724727736 51083 2026-07-30T04:00:59.106955
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207823 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_31_1785384091.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2724727737 51083 2026-07-30T04:00:59.107008
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2726610279 51112 2026-07-30T04:01:28.314938
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207930 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_32_1785384120.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2726610280 51112 2026-07-30T04:01:28.314938
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2728492821 51141 2026-07-30T04:01:57.522769
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207831 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_32_1785384149.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2728492822 51141 2026-07-30T04:01:57.522769
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2730375363 51170 2026-07-30T04:02:26.730598
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207829 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_32_1785384178.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2730375364 51170 2026-07-30T04:02:26.730662
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2732257905 51199 2026-07-30T04:02:55.938491
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207829 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_33_1785384208.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2732257906 51199 2026-07-30T04:02:55.938491
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2734140447 51229 2026-07-30T04:03:25.146353
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207862 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_33_1785384237.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2734140448 51229 2026-07-30T04:03:25.146353
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2736022989 51258 2026-07-30T04:03:54.354241
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207888 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_34_1785384266.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2736022990 51258 2026-07-30T04:03:54.354241
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2737905532 51287 2026-07-30T04:04:23.562106
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207865 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_34_1785384295.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2737905533 51287 2026-07-30T04:04:23.562106
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2739788074 51316 2026-07-30T04:04:52.770007
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207901 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_35_1785384324.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2739788075 51316 2026-07-30T04:04:52.770008
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2741670616 51345 2026-07-30T04:05:21.977825
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207817 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_35_1785384354.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2741670617 51345 2026-07-30T04:05:21.977891
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2743553158 51375 2026-07-30T04:05:51.185741
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207850 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_36_1785384383.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2743553159 51375 2026-07-30T04:05:51.185742
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2745435700 51404 2026-07-30T04:06:20.393596
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207854 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_36_1785384412.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2745435701 51404 2026-07-30T04:06:20.393596
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2747318242 51433 2026-07-30T04:06:49.601436
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207840 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_37_1785384441.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2747318243 51433 2026-07-30T04:06:49.601437
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2749200785 51462 2026-07-30T04:07:18.809300
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 29 29207863 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_37_1785384471.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2749200786 51462 2026-07-30T04:07:18.809352
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2751083327 51492 2026-07-30T04:07:48.017222
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207870 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_38_1785384500.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2751083328 51492 2026-07-30T04:07:48.017222
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2752965869 51521 2026-07-30T04:08:17.225025
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207803 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_38_1785384529.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2752965870 51521 2026-07-30T04:08:17.225078
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2754848411 51550 2026-07-30T04:08:46.432913
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207835 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_39_1785384558.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2754848412 51550 2026-07-30T04:08:46.432913
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2756730953 51579 2026-07-30T04:09:15.640776
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207863 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_39_1785384587.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2756730954 51579 2026-07-30T04:09:15.640777
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2758613495 51608 2026-07-30T04:09:44.848648
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207871 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_40_1785384617.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2758613496 51608 2026-07-30T04:09:44.848648
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2760496038 51638 2026-07-30T04:10:14.056515
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882542 30 29207867 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_40_1785384646.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2760496039 51638 2026-07-30T04:10:14.056516
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2762378580 51667 2026-07-30T04:10:43.264385
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207869 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_41_1785384675.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2762378581 51667 2026-07-30T04:10:43.264386
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2764261122 51696 2026-07-30T04:11:12.472259
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207873 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data002.pcap_30_07_2026_09_41_1785384704.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2764261123 51696 2026-07-30T04:11:12.472260
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2766143664 51725 2026-07-30T04:11:41.680080
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207820 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data000.pcap_30_07_2026_09_42_1785384733.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2766143665 51725 2026-07-30T04:11:41.680080
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2768026206 51754 2026-07-30T04:12:10.887939
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 29 29207859 microseconds
+30-07-2026 09:43 - WARNING - No packet loss: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026/PDR_GULP_data001.pcap_30_07_2026_09_42_1785384763.PCAP_PDR
+30-07-2026 09:43 - WARNING - first_pkt_count, first_gps_count, first_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2768026207 51754 2026-07-30T04:12:10.887939
+30-07-2026 09:43 - WARNING - last_pkt_count, last_gps_count, last_pkt_Tstamp
+30-07-2026 09:43 - WARNING - 2769908748 51784 2026-07-30T04:12:40.095760
+30-07-2026 09:43 - WARNING - diff_pkt_count  , diff_gps_count ,  diff_pkt_timstamp
+30-07-2026 09:43 - WARNING - 1882541 30 29207821 microseconds
+30-07-2026 09:43 SLIP check Finished...
+30-07-2026 09:43 Pulsar data reduction pipeline started ...
+30-07-2026 09:43 - WARNING - Data Directory: /data/dsp/GBD_TRANSIENT_BUFFER/J0534+2200/30_07_2026
+30-07-2026 09:43 - WARNING - Pulsar: J0534+2200
+30-07-2026 09:43 - WARNING - CH selelction: 0
+30-07-2026 09:43 - WARNING - Phase file: /home/dsp/PDR_acquire_setup/dada_scripts/phase/rf_path_phase.dat
+30-07-2026 09:43 - WARNING - Obs. logfile: /home/dsp/PDR_acquire_setup/master_obs_log/J0534+2200_30_07_2026_observation.log
+30-07-2026 09:43 - WARNING - Observation start time: 2026_07_30_09_04_12
+30-07-2026 09:43 - WARNING - parfile: /home/dsp/parfiles/J0534+2200.par
+30-07-2026 09:43 - WARNING - DM: 56.7143
+30-07-2026 09:43 - WARNING - Period: 0.033854804474966034
+30-07-2026 09:43 - WARNING - RA_DEC: 05:34:31.973+22:00:52.06
+30-07-2026 09:43 - WARNING - out_dada_file: J0534+2200_2026_07_30_09_04_12_type_0.dada
+30-07-2026 09:43 - WARNING - Number of files to process: 80
+30-07-2026 09:43 - WARNING - Files per batch:  17
+30-07-2026 10:01 - WARNING - Time taken for PDR2DADA convertion: 0:18:33.724051
+30-07-2026 10:01 - WARNING - Center_freq: 175
+30-07-2026 10:01 - WARNING - int_time: 3.0
+30-07-2026 10:01 - WARNING - nbins: 128
+30-07-2026 10:01 - WARNING - fil_chan: 256
+30-07-2026 10:01 - WARNING - cpu: 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+30-07-2026 10:01 - WARNING - thread: 32
+30-07-2026 10:01 - WARNING - nbit: 8
+30-07-2026 10:01 - WARNING - time_avg: 0.000128
+30-07-2026 10:01 - WARNING - MJD_START: 61251.14875774873
+30-07-2026 10:01 - WARNING - output: J0534+2200_61251.15_175MHz_type_0_GBD_DART
+30-07-2026 10:01 - WARNING - singularity_container: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  
+30-07-2026 10:01 - WARNING - ------ DIGIFITS ------
+30-07-2026 10:01 - WARNING - ---- Search Mode FITS -------
+30-07-2026 10:01 - WARNING - digifits_ful_stokes_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 4 -t 0.000128 J0534+2200_2026_07_30_09_04_12_type_0.dada -o J0534+2200_2026_07_30_09_04_12_type_0.dada_stokes.fits
+30-07-2026 10:28 - WARNING - ------ Total intensity FITS -------
+30-07-2026 10:28 - WARNING - digifits_total_intensity_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  digifits  -F 256 -x 256 -b 8 -p 1 -t 0.000128 J0534+2200_2026_07_30_09_04_12_type_0.dada -o J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits
+30-07-2026 10:50 - WARNING - Nchan: 256
+30-07-2026 10:50 - WARNING - Nbin: 128
+30-07-2026 10:50 - WARNING - Tavg: 0.000128
+30-07-2026 10:50 - WARNING - Time taken for DIGIFITS run: 0:48:44.094646
+30-07-2026 10:50 - WARNING - ------ DSPSR ------
+30-07-2026 10:50 - WARNING - ------- Coherent Dedispersion Folded archive -------
+30-07-2026 10:50 - WARNING - dspsr_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  dspsr J0534+2200_2026_07_30_09_04_12_type_0.dada -cpu 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 -t 32 -E /home/dsp/parfiles/J0534+2200.par -L 3.0 -b 128 -F 256:D -N J0534+2200 -a PSRFITS -A -e .fits -O J0534+2200_61251.15_175MHz_type_0_GBD_DART
+30-07-2026 10:59 - WARNING - ------- Incoherent Dedispersion Folded archive -------
+30-07-2026 10:59 - WARNING - Incoherent_DD_dspsr_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  dspsr J0534+2200_2026_07_30_09_04_12_type_0.dada_stokes.fits -cpu 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 -t 32 -E /home/dsp/parfiles/J0534+2200.par -L 3.0 -b 128 -N J0534+2200 -A -e .fits -O J0534+2200_61251.15_175MHz_type_0_GBD_DART_stokes_Incoherent_DD
+30-07-2026 11:01 - WARNING - Time taken for DSPSR run: 0:10:37.527838
+30-07-2026 11:01 - WARNING - ------ PSREDIT ------
+30-07-2026 11:01 - WARNING - psredit_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  psredit -c name=J0534+2200,be:name=GSB,coord=05:34:31.973+22:00:52.06 -m *_GBD_DART*fits
+30-07-2026 11:01 - WARNING - Time taken for PSREDIT run: 0:00:04.863659
+30-07-2026 11:01 - WARNING - ------ Iterative RFI Cleaner ------
+30-07-2026 11:01 - WARNING - Iterative_cleaner_cmd: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   python3 /home/dsp/PDR_acquire_setup/iterative_cleaner.py -s 3 -c 3 -m 10 *_GBD_DART*fits
+30-07-2026 11:05 - WARNING - Time taken for Iterative_cleaner run: 0:04:03.000026
+30-07-2026 11:05 - WARNING - ------ PDMP ------
+30-07-2026 11:05 - WARNING - pdmp_cmd1: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  pdmp -dr 2 -ds 0.05 -g J0534+2200_61251.15_175MHz_type_0_GBD_DART.fits_cleaned.ar.ps/cps J0534+2200_61251.15_175MHz_type_0_GBD_DART.fits_cleaned.ar
+30-07-2026 11:10 - WARNING - pdmp_cmd2: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  pdmp -dr 2 -ds 0.05 -g J0534+2200_61251.15_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar.ps/cps J0534+2200_61251.15_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar
+30-07-2026 11:14 - WARNING - Time taken for PDMP run: 0:09:36.677994
+30-07-2026 11:14 - WARNING - ------ PS2PDF ------
+30-07-2026 11:14 - WARNING - ps2pdf_cmd1: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  ps2pdf J0534+2200_61251.15_175MHz_type_0_GBD_DART.fits_cleaned.ar.ps J0534+2200_61251.15_175MHz_type_0_GBD_DART.fits_cleaned.ar.ps.pdf
+30-07-2026 11:14 - WARNING - ps2pdf_cmd2: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  ps2pdf J0534+2200_61251.15_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar.ps J0534+2200_61251.15_175MHz_type_0_GBD_DART_stokes_Incoherent_DD.fits_cleaned.ar.ps.pdf
+30-07-2026 11:14 - WARNING - Time taken for PDMP run: 0:00:01.151884
+30-07-2026 11:14 - WARNING - Overall time taken for data reduction: 1:31:41.495550
+30-07-2026 11:14 - WARNING - J0534+2200_2026_07_30_09_04_12_type_0.dada... file removed
+30-07-2026 11:14 - WARNING - All done!
+30-07-2026 11:15 --- PRESTO ---
+30-07-2026 11:15 singularity_container: singularity exec /home/dsp/singularity_imag/pschive_py3.sif  
+30-07-2026 11:15 Filterbank to Process for PULSAR: J0534+2200 with DM:56.7143 : J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits
+30-07-2026 11:15 --- RFIFIND ---
+30-07-2026 11:15 RFIFIND: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   rfifind -time 2.0 -o J0534+2200 J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits
+30-07-2026 11:16 --- PREPDATA ---
+30-07-2026 11:16 PREPDATA: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   prepdata -nobary -o J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits -dm 56.7143 -mask J0534+2200_rfifind.mask J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits
+30-07-2026 11:17 --- REALFFT ---
+30-07-2026 11:17 REALFFT: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   realfft  J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits.dat
+30-07-2026 11:17 --- ACCELSEARCH ---
+30-07-2026 11:17 ACCELSEARCH: singularity exec /home/dsp/singularity_imag/pschive_py3.sif   accelsearch -numharm 8 -zmax 8  J0534+2200_2026_07_30_09_04_12_type_0.dada_intensity.fits.fft
+30-07-2026 11:17 Observation Over.
