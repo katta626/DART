@@ -1,0 +1,946 @@
+from datetime import datetime
+import atexit
+import base64
+import glob
+import html
+import os
+import re
+import subprocess
+import sys
+import datetime as dtt
+import pandas as pd
+import streamlit as st
+from astropy import units as u
+from astropy.coordinates import EarthLocation
+from astropy.time import Time
+import requests
+
+from datastore import DataStore
+from dart_config import (
+    APP_TIMEZONE,
+    ARCHIVE_RECENT_LIMIT,
+    BACKGROUND_IMAGE_PATH,
+    CONFIG_PATH,
+    DB_PATH,
+    FITS_PLOTS_DIR,
+    LOG_DIR,
+    OBSERVATORY_HEIGHT_M,
+    OBSERVATORY_LATITUDE,
+    OBSERVATORY_LONGITUDE,
+    PAGE_ICON,
+    PAGE_TITLE,
+    PROJECT_ROOT,
+    QUICK_OBSERVATION_COUNTDOWN_SECONDS,
+    QUICK_OBSERVATION_NAME,
+    SCHEDULER_SCRIPT_PATH,
+    get_fragment_refresh_seconds,
+    get_runtime_settings,
+)
+from pulsar_info import RA, count
+from schedule_time import (
+    OBSERVATION_TIME_FORMAT,
+    calculate_duration_minutes,
+    extract_clock_time,
+    format_sidereal_time,
+    normalize_observation_time,
+)
+
+db = DataStore(DB_PATH)
+observing_location = EarthLocation(
+    lat=OBSERVATORY_LATITUDE * u.deg,
+    lon=OBSERVATORY_LONGITUDE * u.deg,
+    height=OBSERVATORY_HEIGHT_M * u.m,
+)
+
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON, initial_sidebar_state="expanded", layout="wide")
+
+
+_APP_RUNTIME = {"proc": None}
+
+
+@st.cache_resource(show_spinner=False)
+def bootstrap_app_runtime() -> dict:
+    for observation in db.get_all_observations():
+        db.update_observation(observation["name"], status="Not Started", started_at=None)
+    db.update_system_status("Log_Current", "")
+    db.update_system_status("status_current", "❌")
+    return _APP_RUNTIME
+
+
+def get_runtime_state() -> dict:
+    return bootstrap_app_runtime()
+
+
+def cleanup() -> None:
+    proc = get_runtime_state().get("proc")
+    if proc is not None and proc.poll() is None:
+        proc.terminate()
+        proc.wait()
+
+
+atexit.register(cleanup)
+
+
+def initialize_app_state() -> None:
+    defaults = {
+        "edit_mode": False,
+        "add_mode": False,
+        "search_mode": False,
+        "quick_duration": 10,
+        "config_mtime": None,
+        "config_refresh_interval_ms": None,
+    }
+
+    for key, value in defaults.items():
+        if key not in st.session_state:
+            st.session_state[key] = value
+
+    get_runtime_state()
+
+
+def get_all_time():
+    utc_now = datetime.now(dtt.UTC)
+    ist_now = utc_now.astimezone(APP_TIMEZONE).replace(microsecond=0)
+    observing_time = Time(utc_now, scale="utc", location=observing_location)
+    return observing_time.sidereal_time("mean"), ist_now
+
+
+def get_current_lst_time() -> str:
+    lst, _ = get_all_time()
+    return format_sidereal_time(lst)
+
+
+def sync_runtime_config() -> dict:
+    runtime_settings = get_runtime_settings()
+    refresh_interval_ms = runtime_settings["ui"]["refresh_interval_ms"]
+
+    try:
+        config_mtime = CONFIG_PATH.stat().st_mtime if CONFIG_PATH.exists() else None
+    except OSError:
+        config_mtime = None
+
+    previous_refresh_interval_ms = st.session_state.get("config_refresh_interval_ms")
+    previous_config_mtime = st.session_state.get("config_mtime")
+
+    if previous_refresh_interval_ms is None and previous_config_mtime is None:
+        st.session_state.config_refresh_interval_ms = refresh_interval_ms
+        st.session_state.config_mtime = config_mtime
+        return runtime_settings
+
+    if previous_refresh_interval_ms != refresh_interval_ms or previous_config_mtime != config_mtime:
+        st.session_state.config_refresh_interval_ms = refresh_interval_ms
+        st.session_state.config_mtime = config_mtime
+        st.rerun()
+
+    return runtime_settings
+
+
+def set_bg_hack(main_bg: str) -> None:
+    if not os.path.exists(main_bg):
+        return
+
+    with open(main_bg, "rb") as image_file:
+        encoded_image = base64.b64encode(image_file.read()).decode()
+
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background: url(data:image/png;base64,{encoded_image});
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def format_countdown(countdown_seconds) -> str:
+    if countdown_seconds in (None, ""):
+        return "Unknown"
+
+    try:
+        remaining = max(0, int(round(float(countdown_seconds))))
+    except (TypeError, ValueError):
+        return str(countdown_seconds)
+
+    hours, remainder = divmod(remaining, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+def format_ist_timestamp(timestamp_seconds: float) -> str:
+    return datetime.fromtimestamp(timestamp_seconds, APP_TIMEZONE).strftime("%d-%m-%Y %H:%M:%S IST")
+
+
+def parse_observation_datetime(value) -> datetime | None:
+    normalized_value = normalize_observation_time(value)
+    if not normalized_value:
+        return None
+
+    try:
+        return datetime.strptime(normalized_value, OBSERVATION_TIME_FORMAT)
+    except ValueError:
+        return None
+
+
+def format_elapsed_time(started_at_value) -> str:
+    started_at = parse_observation_datetime(started_at_value)
+    if started_at is None:
+        return "00:00:00"
+
+    now_local = datetime.now(APP_TIMEZONE).replace(tzinfo=None, microsecond=0)
+    elapsed_seconds = max(0, int((now_local - started_at).total_seconds()))
+    hours, remainder = divmod(elapsed_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+def format_file_size(size_bytes: int) -> str:
+    size = float(size_bytes)
+    for unit in ("B", "KB", "MB", "GB"):
+        if size < 1024 or unit == "GB":
+            return f"{size:.1f} {unit}"
+        size /= 1024
+    return f"{size_bytes} B"
+
+
+def parse_observation_date(file_name: str) -> str:
+    match = re.search(r"(\d{2})_(\d{2})_(\d{4})", file_name)
+    if match is None:
+        return "Unknown"
+
+    day, month, year = match.groups()
+    return f"{day}-{month}-{year}"
+
+
+def build_widget_key(prefix: str, value: str) -> str:
+    safe_value = re.sub(r"[^0-9A-Za-z]+", "_", value).strip("_")
+    return f"{prefix}_{safe_value}"
+
+
+def inject_custom_styles() -> None:
+    st.markdown(
+        """
+        <style>
+        .dart-info-card {
+            background: linear-gradient(145deg, rgba(12, 28, 52, 0.92), rgba(28, 66, 98, 0.85));
+            border: 1px solid rgba(145, 196, 255, 0.22);
+            border-radius: 18px;
+            padding: 1rem 1.1rem;
+            margin: 0.4rem 0 0.8rem 0;
+            box-shadow: 0 16px 40px rgba(5, 16, 30, 0.22);
+            color: #f4f8ff;
+        }
+        .dart-info-kicker {
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #8bd6ff;
+            margin-bottom: 0.35rem;
+        }
+        .dart-info-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.2rem;
+        }
+        .dart-info-meta {
+            font-size: 0.92rem;
+            color: rgba(244, 248, 255, 0.78);
+            line-height: 1.45;
+        }
+        .dart-highlight {
+            background: linear-gradient(135deg, rgba(240, 248, 255, 0.9), rgba(214, 236, 255, 0.88));
+            border: 1px solid rgba(63, 120, 180, 0.2);
+            border-radius: 20px;
+            padding: 1rem 1.1rem;
+            margin-bottom: 1rem;
+            color: #17324d;
+        }
+        .dart-highlight-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        .dart-highlight-meta {
+            font-size: 0.95rem;
+            color: #35526f;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+@st.cache_data(show_spinner=False, ttl=10)
+def build_archive_records(base_dir: str) -> list[dict]:
+    records = []
+    if not os.path.exists(base_dir):
+        return records
+
+    pulsar_dirs = [name for name in os.listdir(base_dir) if os.path.isdir(os.path.join(base_dir, name))]
+    for pulsar in sorted(pulsar_dirs):
+        pulsar_dir = os.path.join(base_dir, pulsar)
+        for fits_path in glob.glob(os.path.join(pulsar_dir, "*.fits")):
+            preview_path = fits_path.replace(".fits", ".png")
+            created_ts = os.path.getctime(fits_path)
+            file_name = os.path.basename(fits_path)
+            records.append(
+                {
+                    "pulsar": pulsar,
+                    "fits_path": fits_path,
+                    "file_name": file_name,
+                    "observation_date": parse_observation_date(file_name),
+                    "preview_path": preview_path if os.path.exists(preview_path) else None,
+                    "created_ts": created_ts,
+                    "created_at": format_ist_timestamp(created_ts),
+                    "file_size_bytes": os.path.getsize(fits_path),
+                    "file_size": format_file_size(os.path.getsize(fits_path)),
+                }
+            )
+
+    records.sort(key=lambda record: record["created_ts"], reverse=True)
+    return records
+
+
+@st.cache_data(show_spinner=False, ttl=60)
+def load_binary_file(file_path: str) -> bytes:
+    with open(file_path, "rb") as file_handle:
+        return file_handle.read()
+
+
+def get_active_observations(schedule: dict[str, dict]) -> list[dict]:
+    active_records = []
+    for name, details in schedule.items():
+        if details.get("status") != "In Progress":
+            continue
+
+        started_at = details.get("started_at") or details.get("ra_start")
+        active_records.append(
+            {
+                "name": name,
+                "duration": details.get("duration"),
+                "started_at": normalize_observation_time(started_at),
+                "ra_start": normalize_observation_time(details.get("ra_start")),
+            }
+        )
+
+    active_records.sort(
+        key=lambda record: parse_observation_datetime(record["started_at"]) or datetime.min
+    )
+    return active_records
+
+
+@st.cache_data(show_spinner=False, ttl=60)
+def get_live_storage_stats(space_url: str, request_timeout_seconds: float) -> tuple[str, str, str]:
+    try:
+        response = requests.get(space_url, timeout=request_timeout_seconds)
+        response.raise_for_status()
+        data = response.json()
+    except (requests.RequestException, ValueError):
+        return "Unavailable", "Unavailable", "Unavailable"
+
+    total = str(data.get("total", "Unavailable"))
+    used = str(data.get("used", "Unavailable"))
+    free = str(data.get("free", "Unavailable"))
+    return total, used, free
+
+
+@st.fragment(run_every=get_fragment_refresh_seconds())
+def render_time_panel() -> None:
+    schedule = {obs["name"]: obs for obs in db.get_all_observations(order_by_countdown=True)}
+    current_lst, ist_now = get_all_time()
+    current_lst_str = format_sidereal_time(current_lst)
+    runtime_settings = sync_runtime_config()
+    total, used, free = get_live_storage_stats(
+        runtime_settings["network"]["space_url"],
+        runtime_settings["network"]["request_timeout_seconds"],
+    )
+
+    st.markdown(
+        f"""
+        <div class="dart-info-card">
+            <div class="dart-info-kicker">Live Space Available</div>
+            <div class="dart-info-title">Total Space {html.escape(total)}</div>
+            <div class="dart-info-meta">Used {html.escape(used)}</div>
+            <div class="dart-info-meta">Available Space {html.escape(free)}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        f"""
+        <div class="dart-info-card">
+            <div class="dart-info-kicker">Clock</div>
+            <div class="dart-info-title">IST {html.escape(ist_now.strftime("%H:%M:%S"))}</div>
+            <div class="dart-info-meta">Current RA / LST: {html.escape(current_lst_str)}</div>
+            <div class="dart-info-meta">{html.escape(ist_now.strftime("%d-%m-%Y IST"))}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    active_observations = get_active_observations(schedule)
+    if not active_observations:
+        st.markdown(
+            """
+            <div class="dart-info-card">
+                <div class="dart-info-kicker">Observation Status</div>
+                <div class="dart-info-title">Idle</div>
+                <div class="dart-info-meta">No pulsar is currently marked as in progress.</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        return
+
+    for active in active_observations:
+        elapsed = format_elapsed_time(active["started_at"])
+        planned_duration = active.get("duration") or "N/A"
+        st.markdown(
+            f"""
+            <div class="dart-info-card">
+                <div class="dart-info-kicker">Currently Observing</div>
+                <div class="dart-info-title">{html.escape(active["name"])}</div>
+                <div class="dart-info-meta">Elapsed: {html.escape(elapsed)}</div>
+                <div class="dart-info-meta">Started: {html.escape(active["started_at"])}</div>
+                <div class="dart-info-meta">Planned duration: {html.escape(str(planned_duration))} min</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+
+def build_schedule_dataframe(schedule: dict[str, dict]) -> pd.DataFrame:
+    rows = []
+    for pulsar, details in schedule.items():
+        started_at = normalize_observation_time(details.get("started_at", "")) if details.get("started_at") else "—"
+        rows.append(
+            {
+                "Pulsar": pulsar,
+                "Duration (minutes)": details.get("duration", "N/A"),
+                "Status": details.get("status", "Not Started"),
+                "RA Start": normalize_observation_time(details.get("ra_start", "")),
+                "Count Down": format_countdown(details.get("count_down")),
+                "Started": started_at if details.get("status") == "In Progress" else "—",
+            }
+        )
+
+    return pd.DataFrame(rows)
+    
+
+
+@st.fragment(run_every=get_fragment_refresh_seconds())
+def render_schedule_table():
+    schedule = {
+        obs["name"]: obs
+        for obs in db.get_all_observations(order_by_countdown=True)
+    }
+
+    if schedule:
+        st.dataframe(
+            build_schedule_dataframe(schedule),
+            width='stretch',
+            hide_index=True,
+        )
+    else:
+        st.info("No scheduled pulsars yet.")
+
+def add_schedule_entry(
+    name: str,
+    duration: int,
+    ra_start,
+    countdown: float,
+    *,
+    status: str = "Not Started",
+    started_at: str | None = None,
+) -> None:
+    db.add_or_update_observation(
+        name=name,
+        duration=int(duration),
+        status=status,
+        ra_start=normalize_observation_time(ra_start),
+        count_down=float(countdown),
+        started_at=normalize_observation_time(started_at) if started_at else None,
+    )
+
+
+def upsert_quick_observation(duration: int, ra_start, countdown: float) -> str:
+    existing = db.get_observation(QUICK_OBSERVATION_NAME)
+    action = "Updated" if existing else "Added"
+    status = "Not Started"
+    started_at = None
+
+    if existing and existing.get("status") == "In Progress":
+        status = "In Progress"
+        started_at = existing.get("started_at")
+
+    add_schedule_entry(
+        name=QUICK_OBSERVATION_NAME,
+        duration=duration,
+        ra_start=ra_start,
+        countdown=countdown,
+        status=status,
+        started_at=started_at,
+    )
+    return action
+
+
+def render_quick_add() -> None:
+    with st.popover("⏱️ add_now"):
+        current_ra = get_current_lst_time()
+        st.caption(f"Current RA / LST: {current_ra}")
+        st.session_state.quick_duration = st.number_input(
+            "Duration (minutes)",
+            min_value=1,
+            step=1,
+            value=st.session_state.quick_duration,
+            key="quick_add_duration",
+        )
+
+        if st.button("Confirm Add", key="quick_add_confirm"):
+            action = upsert_quick_observation(
+                duration=st.session_state.quick_duration,
+                ra_start=current_ra,
+                countdown=QUICK_OBSERVATION_COUNTDOWN_SECONDS,
+            )
+            st.success(f"{action} {QUICK_OBSERVATION_NAME} with current RA {current_ra}")
+            st.rerun()
+
+
+def render_add_observation(schedule: dict[str, dict]) -> None:
+    with st.expander("Add New Pulsar", expanded=True):
+        st.checkbox(
+            "Activate Search Mode",
+            help="Check this box to switch from Normal Mode to Search Mode.",
+            key="search_mode",
+        )
+
+        if st.session_state.search_mode:
+            st.write("Current Mode: Search Mode")
+            st.caption("Use HH:MM or HH:MM:SS. The saved value is normalized automatically.")
+
+            start_ra = st.text_input("RA Start", placeholder="HH:MM:SS", key="search_ra_start")
+            end_ra = st.text_input("RA End", placeholder="HH:MM:SS", key="search_ra_end")
+
+            if st.button("Confirm Add", key="confirm_add_search"):
+                try:
+                    duration_minutes = calculate_duration_minutes(start_ra, end_ra)
+                    countdown = count(extract_clock_time(start_ra))
+                except ValueError as exc:
+                    st.error(str(exc))
+                    return
+
+                action = upsert_quick_observation(
+                    duration=duration_minutes,
+                    ra_start=start_ra,
+                    countdown=countdown,
+                )
+                st.success(f"{action} pulsar '{QUICK_OBSERVATION_NAME}'.")
+                st.session_state.add_mode = False
+                st.rerun()
+
+        else:
+            st.write("Current Mode: Normal Mode")
+            new_pulsar_name = st.text_input("New Pulsar Name", key="new_pulsar_name")
+            new_duration = st.number_input(
+                "New Duration (minutes)",
+                min_value=1,
+                step=1,
+                key="new_pulsar_duration",
+            )
+
+            if st.button("Confirm Add", key="confirm_add_normal"):
+                name = new_pulsar_name.strip()
+                if not name:
+                    st.error("Please enter a pulsar name.")
+                    return
+                if name in schedule:
+                    st.error("Pulsar already exists. Use Edit instead.")
+                    return
+
+                try:
+                    ra_start, countdown = RA(name)
+                except Exception as exc:
+                    st.error(f"Could not look up '{name}': {exc}")
+                    return
+
+                add_schedule_entry(
+                    name=name,
+                    duration=new_duration,
+                    ra_start=ra_start,
+                    countdown=max(0, countdown / 2),
+                )
+                st.success(f"Added pulsar '{name}'.")
+                st.session_state.add_mode = False
+                st.rerun()
+
+
+def render_edit_observation(schedule: dict[str, dict]) -> None:
+    with st.expander("✏️ Edit Pulsar", expanded=True):
+        selected_pulsar = st.selectbox(
+            "Select Pulsar to Edit",
+            options=list(schedule.keys()),
+            index=0,
+            key="edit_selected_pulsar",
+        )
+
+        if not selected_pulsar:
+            return
+
+        details = schedule[selected_pulsar]
+        duration = int(details.get("duration", 1) or 1)
+        status = details.get("status", "Not Started")
+        ra_start = normalize_observation_time(details.get("ra_start", ""))
+        count_down = details.get("count_down", duration * 30)
+        started_at = details.get("started_at")
+
+        st.caption(f"RA Start: {ra_start}")
+
+        new_duration = st.number_input(
+            "Duration (minutes)",
+            min_value=1,
+            value=duration,
+            step=1,
+            key=f"edit_duration_{selected_pulsar}",
+        )
+
+        if st.button("Update Schedule", key=f"update_schedule_{selected_pulsar}"):
+            db.add_or_update_observation(
+                name=selected_pulsar,
+                duration=int(new_duration),
+                status=status,
+                ra_start=ra_start,
+                count_down=count_down,
+                started_at=started_at,
+            )
+            st.success(f"Updated schedule for '{selected_pulsar}'.")
+            st.session_state.edit_mode = False
+            st.rerun()
+
+        if st.button("Delete Schedule", type="secondary", key=f"delete_schedule_{selected_pulsar}"):
+            db.delete_observation(selected_pulsar)
+            st.warning(f"Deleted schedule for '{selected_pulsar}'.")
+            st.session_state.edit_mode = False
+            st.rerun()
+
+
+def read_all_lines(file_path: str) -> list[str]:
+    if not os.path.exists(file_path):
+        return []
+    with open(file_path, "r") as file_handle:
+        return [line.strip() for line in file_handle.readlines()]
+
+
+def filter_lines(lines: list[str], keywords: list[str]) -> list[str]:
+    if not keywords:
+        return lines
+    return [line for line in lines if any(keyword in line for keyword in keywords)]
+
+
+def main_1() -> None:
+    inject_custom_styles()
+    set_bg_hack(BACKGROUND_IMAGE_PATH)
+    runtime = get_runtime_state()
+
+    schedule = {obs["name"]: obs for obs in db.get_all_observations(order_by_countdown=True)}
+    with st.sidebar:
+        st.header("SCHEDULER")
+        render_time_panel()
+
+        status_current = db.get_system_status("status_current") or "❌"
+        edit_col, add_col, quick_add_col, run_col = st.columns([2, 2, 4, 3])
+
+        with edit_col:
+            if st.button("✏️", key="open_edit_mode"):
+                st.session_state.edit_mode = True
+
+        with add_col:
+            if st.button("➕ Add", key="open_add_mode"):
+                st.session_state.add_mode = True
+
+        with quick_add_col:
+            render_quick_add()
+
+        render_schedule_table()
+
+        with run_col:
+            proc = runtime.get("proc")
+            obs_running = proc is not None and proc.poll() is None
+            if st.button(status_current, type="primary", key="toggle_scheduler"):
+                if obs_running:
+                    if proc:
+                        proc.terminate()
+                        try:
+                            proc.wait(timeout=5)
+                        except subprocess.TimeoutExpired:
+                            proc.kill()
+                        runtime["proc"] = None
+                        db.update_system_status("status_current", "DEAD ☠️")
+                        st.warning("Stopped observation.")
+                else:
+                    runtime["proc"] = subprocess.Popen(
+                        [sys.executable, SCHEDULER_SCRIPT_PATH],
+                        cwd=str(PROJECT_ROOT),
+                    )
+                    db.update_system_status("status_current", "LIVE 🟢")
+                    st.success("Started observation.")
+
+                st.rerun()
+
+        if st.session_state.add_mode:
+            render_add_observation(schedule)
+
+        if schedule and st.session_state.edit_mode:
+            render_edit_observation(schedule)
+
+
+def render_log_updates_tab() -> None:
+    log_files = db.get_system_status("Log_Current") or []
+    if isinstance(log_files, str):
+        log_files = [log_files]
+
+    filter_keywords = [
+        "Waiting for",
+        "Observation",
+        "Pulsar:",
+        "ACQ over",
+        "Removing Trigger file from remote machine",
+        "Observation stoped",
+        "SLIP check",
+        "Pulsar data reduction pipeline started ...",
+        "---",
+        "All done!",
+    ]
+
+    if not log_files:
+        st.warning("No log files found in the current run.")
+        return
+
+    for log_file in log_files:
+        file_path = os.path.join(LOG_DIR, log_file)
+        with st.expander(f"Show Log Updates: {log_file}", expanded=False):
+            filtered_lines = filter_lines(read_all_lines(file_path), filter_keywords)
+            if filtered_lines:
+                st.text("\n".join(filtered_lines))
+            else:
+                st.text("No matching logs yet.")
+
+
+def render_archive_tab() -> None:
+    st.markdown(
+        """
+        <div class="dart-highlight">
+            <div class="dart-highlight-title">Observation Archive</div>
+            <div class="dart-highlight-meta">
+                Search, filter, preview, and download recent FITS observations from one place.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    archive_records = build_archive_records(FITS_PLOTS_DIR)
+    if not archive_records:
+        st.info("No FITS archives are available yet.")
+        return
+
+    search_query = st.text_input(
+        "Search observations",
+        placeholder="Search by pulsar, file name, or observation date",
+        key="archive_search_query",
+    ).strip()
+
+    available_pulsars = sorted({record["pulsar"] for record in archive_records})
+    pulsar_col, preview_filter_col, scope_col, sort_col = st.columns([2.3, 1.1, 1, 1.4])
+
+    with pulsar_col:
+        selected_pulsars = st.multiselect(
+            "Filter pulsars",
+            options=available_pulsars,
+            default=[],
+            key="archive_pulsar_filter",
+        )
+    with preview_filter_col:
+        preview_only = st.checkbox(
+            "Preview only",
+            value=False,
+            help="Only show observations with a preview PNG.",
+            key="archive_preview_only",
+        )
+    with scope_col:
+        show_all_matches = st.checkbox(
+            "Show all",
+            value=False,
+            help="By default only the latest matches are shown.",
+            key="archive_show_all_matches",
+        )
+    with sort_col:
+        sort_mode = st.selectbox(
+            "Sort by",
+            options=["Newest", "Oldest", "Pulsar A-Z", "Largest FITS"],
+            key="archive_sort_mode",
+        )
+
+    normalized_query = search_query.lower()
+    filtered_records = []
+    for record in archive_records:
+        searchable_text = " ".join(
+            [
+                record["pulsar"],
+                record["file_name"],
+                record["observation_date"],
+                record["created_at"],
+            ]
+        ).lower()
+
+        if normalized_query and normalized_query not in searchable_text:
+            continue
+        if selected_pulsars and record["pulsar"] not in selected_pulsars:
+            continue
+        if preview_only and record["preview_path"] is None:
+            continue
+
+        filtered_records.append(record)
+
+    if sort_mode == "Oldest":
+        filtered_records.sort(key=lambda record: record["created_ts"])
+    elif sort_mode == "Pulsar A-Z":
+        filtered_records.sort(key=lambda record: (record["pulsar"], -record["created_ts"]))
+    elif sort_mode == "Largest FITS":
+        filtered_records.sort(key=lambda record: record["file_size_bytes"], reverse=True)
+    else:
+        filtered_records.sort(key=lambda record: record["created_ts"], reverse=True)
+
+    records_to_display = filtered_records if show_all_matches else filtered_records[:ARCHIVE_RECENT_LIMIT]
+
+    total_col, matched_col, showing_col = st.columns(3)
+    total_col.metric("Total observations", len(archive_records))
+    matched_col.metric("Matches", len(filtered_records))
+    showing_col.metric("Showing", len(records_to_display))
+
+    if show_all_matches:
+        st.caption("Showing all filtered observations.")
+    else:
+        st.caption(f"Showing the latest {min(ARCHIVE_RECENT_LIMIT, len(records_to_display))} filtered observations.")
+
+    if not records_to_display:
+        st.warning("No archive entries matched the current search and filters.")
+        return
+
+    featured_record = records_to_display[0]
+    with st.container(border=True):
+        feature_meta_col, feature_preview_col = st.columns([1.8, 1.2])
+        with feature_meta_col:
+            st.subheader(f"Featured: {featured_record['pulsar']}")
+            st.write(f"Latest file: `{featured_record['file_name']}`")
+            st.write(f"Observation Date: {featured_record['observation_date']}")
+            st.write(f"Added (IST): {featured_record['created_at']}")
+            st.write(f"FITS Size: {featured_record['file_size']}")
+            st.download_button(
+                "Download Featured FITS",
+                data=load_binary_file(featured_record["fits_path"]),
+                file_name=featured_record["file_name"],
+                mime="application/fits",
+                key=build_widget_key("download_featured_fits", featured_record["fits_path"]),
+                width='stretch',
+            )
+        with feature_preview_col:
+            if featured_record["preview_path"]:
+                st.image(
+                    featured_record["preview_path"],
+                    caption=f"{featured_record['pulsar']} preview",
+                    width='stretch',
+                )
+            else:
+                st.info("Preview image not available.")
+
+    archive_summary = pd.DataFrame(
+        [
+            {
+                "Pulsar": record["pulsar"],
+                "Observation Date": record["observation_date"],
+                "Added (IST)": record["created_at"],
+                "FITS Size": record["file_size"],
+                "Preview": "Yes" if record["preview_path"] else "No",
+            }
+            for record in records_to_display
+        ]
+    )
+    st.dataframe(archive_summary, width='stretch', hide_index=True)
+
+    remaining_records = records_to_display[1:] if len(records_to_display) > 1 else []
+    if not remaining_records:
+        return
+
+    card_columns = st.columns(2)
+    for index, record in enumerate(remaining_records):
+        with card_columns[index % 2]:
+            with st.container(border=True):
+                st.subheader(record["pulsar"])
+                st.caption(f"Observed on {record['observation_date']}")
+                st.write(f"File: `{record['file_name']}`")
+                st.write(f"Added (IST): {record['created_at']}")
+                st.write(f"FITS Size: {record['file_size']}")
+                st.download_button(
+                    "Download FITS",
+                    data=load_binary_file(record["fits_path"]),
+                    file_name=record["file_name"],
+                    mime="application/fits",
+                    key=build_widget_key("download_fits", record["fits_path"]),
+                    width='stretch',
+                )
+                if record["preview_path"]:
+                    st.image(
+                        record["preview_path"],
+                        caption=f"{record['pulsar']} preview",
+                        width='stretch',
+                    )
+                else:
+                    st.info("Preview image not available.")
+
+
+def render_diagnostic_tab() -> None:
+    st.info("Diagnostic plots will appear here when they are configured.")
+
+
+def main() -> None:
+    
+    tab1, tab2, tab3 = st.tabs(["LOG UPDATES 🫶🏻", "Pulsar Data Archive 🌀", "DIAGNOSTIC PLOTS 🧚‍♀️"])
+
+    with tab1:
+        render_log_updates_tab()
+
+    with tab2:
+        st.markdown("""
+                    <style>
+
+                    /* Apply to all tab blocks */
+                    .stTabs div[data-testid="stVerticalBlock"] {
+                        background-color: #f8e8ea;
+                        background-color: #f2e3e5;
+                        background-color: #eec9cf;
+                        color: black;
+                    }
+
+                    /* Only Tab 2 */
+                    .stTabs div[role="tabpanel"]:nth-of-type(2) div[data-testid="stVerticalBlock"] {
+                        background-color: #f5f5f5 !important;
+                        color: black !important;
+                    }
+
+                    </style>
+                    """, unsafe_allow_html=True)
+            
+        render_archive_tab()
+
+    with tab3:
+        render_diagnostic_tab()
+
+
+if __name__ == "__main__":
+    initialize_app_state()
+    main_1()
+    main()

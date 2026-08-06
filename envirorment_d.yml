@@ -1,0 +1,14 @@
+name: DART_env # This will become the name of your environment
+dependencies: # The list of packages to include in your environment
+    - python=3.13.2 # You can specify versions
+    - pip
+    - pip: # Include pip dependencies last
+        - streamlit==1.49.1
+        - numpy==2.2.0
+        - streamlit-autorefresh
+        - astropy==7.1.0
+        - astropy-iers-data==0.2025.7.28.0.41.50
+        - psrqpy==1.3.2
+        - matplotlib==3.10.3
+        - matplotlib-inline==0.1.7
+        - scipy==1.16.0
