@@ -362,9 +362,9 @@ def render_time_panel() -> None:
         f"""
         <div class="dart-info-card">
             <div class="dart-info-kicker">Live Space Available</div>
-            <div class="dart-info-title">Total Space {html.escape(total)}</div>
+            <div class="dart-info-title">Avaliable Space {html.escape(free)}</div>
             <div class="dart-info-meta">Used {html.escape(used)}</div>
-            <div class="dart-info-meta">Available Space {html.escape(free)}</div>
+            <div class="dart-info-meta">Total Space {html.escape(total)}</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -374,9 +374,9 @@ def render_time_panel() -> None:
         f"""
         <div class="dart-info-card">
             <div class="dart-info-kicker">Clock</div>
-            <div class="dart-info-title">IST {html.escape(ist_now.strftime("%H:%M:%S"))}</div>
-            <div class="dart-info-meta">Current RA / LST: {html.escape(current_lst_str)}</div>
-            <div class="dart-info-meta">{html.escape(ist_now.strftime("%d-%m-%Y IST"))}</div>
+            <div class="dart-info-title">IST :  {html.escape(ist_now.strftime("%H:%M:%S ; %d-%m-%Y IST"))}</div>
+            <div class="dart-info-title">LST :  {html.escape(current_lst_str)}</div>
+            <div class="dart-info-title">{html.escape(ist_now.strftime("%d-%m-%Y IST"))}</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -467,7 +467,7 @@ def add_schedule_entry(
     )
 
 
-def upsert_quick_observation(duration: int, ra_start, countdown: float) -> str:
+def upsert_quick_observation(duration: int, ra_start, countdown: float, name=QUICK_OBSERVATION_NAME) -> str:
     existing = db.get_observation(QUICK_OBSERVATION_NAME)
     action = "Updated" if existing else "Added"
     status = "Not Started"
@@ -476,9 +476,9 @@ def upsert_quick_observation(duration: int, ra_start, countdown: float) -> str:
     if existing and existing.get("status") == "In Progress":
         status = "In Progress"
         started_at = existing.get("started_at")
-
+    #name=QUICK_OBSERVATION_NAME
     add_schedule_entry(
-        name=QUICK_OBSERVATION_NAME,
+        name=name,
         duration=duration,
         ra_start=ra_start,
         countdown=countdown,
@@ -524,6 +524,7 @@ def render_add_observation(schedule: dict[str, dict]) -> None:
 
             start_ra = st.text_input("RA Start", placeholder="HH:MM:SS", key="search_ra_start")
             end_ra = st.text_input("RA End", placeholder="HH:MM:SS", key="search_ra_end")
+            name_ra = st.text_input("Name", key="name_ra")
 
             if st.button("Confirm Add", key="confirm_add_search"):
                 try:
@@ -537,6 +538,7 @@ def render_add_observation(schedule: dict[str, dict]) -> None:
                     duration=duration_minutes,
                     ra_start=start_ra,
                     countdown=countdown,
+                    name=name_ra
                 )
                 st.success(f"{action} pulsar '{QUICK_OBSERVATION_NAME}'.")
                 st.session_state.add_mode = False

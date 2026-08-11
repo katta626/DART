@@ -26,7 +26,7 @@ _DEFAULT_CONFIG = {
     },
     "network": {
         "scheme": "http",
-        "api_host": "172.17.20.210",
+        "api_host": "172.17.20.XXX",
         "api_port": 6000,
         "request_timeout_seconds": 5,
         "flask_bind_host": "0.0.0.0",
