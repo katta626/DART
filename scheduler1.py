@@ -177,12 +177,11 @@ def update_standard_observation(pulsar: str, data: dict, log_current: list[str])
 
     try:
         next_ra_start, updated_countdown = RA(pulsar)
+        updated_countdown -= (duration * 60) / 2
+        normalized_ra_start = normalize_observation_time(next_ra_start)
+        db.update_observation(pulsar, count_down=updated_countdown, ra_start=normalized_ra_start, started_at=None)
     except Exception:
         return
-
-    updated_countdown -= (duration * 60) / 2
-    normalized_ra_start = normalize_observation_time(next_ra_start)
-    db.update_observation(pulsar, count_down=updated_countdown, ra_start=normalized_ra_start, started_at=None)
 
     if updated_countdown <= SCHEDULER_THRESHOLD_SECONDS:
         if is_retry_window_open(pulsar, duration) and can_retry_trigger(pulsar):
@@ -215,10 +214,10 @@ def main() -> None:
             continue
 
         try:
-            if pulsar == QUICK_OBSERVATION_NAME:
-                update_quick_observation(pulsar, data, log_current)
-            else:
+            if re.match(r"^J\d{4}\+\d{4}", pulsar:
                 update_standard_observation(pulsar, data, log_current)
+            else pulsar == QUICK_OBSERVATION_NAME:
+                update_quick_observation(pulsar, data, log_current)
         except Exception as exc:
             print(f"Scheduler warning for {pulsar}: {exc}")
 
