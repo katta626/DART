@@ -180,42 +180,25 @@ def update_standard_observation(pulsar: str, data: dict, log_current: list[str])
         updated_countdown -= (duration * 60) / 2
         normalized_ra_start = normalize_observation_time(next_ra_start)
         db.update_observation(pulsar, count_down=updated_countdown, ra_start=normalized_ra_start, started_at=None)
-        if updated_countdown <= SCHEDULER_THRESHOLD_SECONDS:
-            if is_retry_window_open(pulsar, duration) and can_retry_trigger(pulsar):
-                mark_trigger_attempt(pulsar)
-                trigger_sent = trigger_observation(
-                    {"target": pulsar, "duration": duration * 2, "countdown": str(STANDARD_TRIGGER_COUNTDOWN)}
-                )
-                if trigger_sent:
-                    db.update_observation(
-                        pulsar,
-                        status="In Progress",
-                        ra_start=normalized_ra_start,
-                        started_at=get_current_started_at(),
-                    )
-                    clear_trigger_attempt(pulsar)
-        else:
-            clear_trigger_attempt(pulsar)
     except Exception:
-        updated_countdown = count(extract_clock_time(ra_start))
-        db.update_observation(pulsar, count_down=updated_countdown, ra_start=ra_start, started_at=None)
-        if updated_countdown <= SCHEDULER_THRESHOLD_SECONDS:
-            if is_retry_window_open(pulsar, duration) and can_retry_trigger(pulsar):
-                mark_trigger_attempt(pulsar)
-                trigger_sent = trigger_observation(
-                    {"target": pulsar, "duration": duration * 2, "countdown": str(STANDARD_TRIGGER_COUNTDOWN)}
-                )
-                if trigger_sent:
-                    db.update_observation(
-                        pulsar,
-                        status="In Progress",
-                        ra_start=normalized_ra_start,
-                        started_at=get_current_started_at(),
-                    )
-                    clear_trigger_attempt(pulsar)
-        else:
-            clear_trigger_attempt(pulsar)
         return
+
+    if updated_countdown <= SCHEDULER_THRESHOLD_SECONDS:
+        if is_retry_window_open(pulsar, duration) and can_retry_trigger(pulsar):
+            mark_trigger_attempt(pulsar)
+            trigger_sent = trigger_observation(
+                {"target": pulsar, "duration": duration * 2, "countdown": str(STANDARD_TRIGGER_COUNTDOWN)}
+            )
+            if trigger_sent:
+                db.update_observation(
+                    pulsar,
+                    status="In Progress",
+                    ra_start=normalized_ra_start,
+                    started_at=get_current_started_at(),
+                )
+                clear_trigger_attempt(pulsar)
+    else:
+        clear_trigger_attempt(pulsar)
 
 
 def main() -> None:
@@ -231,10 +214,10 @@ def main() -> None:
             continue
 
         try:
-            if pulsar == QUICK_OBSERVATION_NAME:
-                update_quick_observation(pulsar, data, log_current)
-            else:
+            if re.match(r"^J\d{4}\+\d{4}", pulsar:
                 update_standard_observation(pulsar, data, log_current)
+            else pulsar == QUICK_OBSERVATION_NAME:
+                update_quick_observation(pulsar, data, log_current)
         except Exception as exc:
             print(f"Scheduler warning for {pulsar}: {exc}")
 
