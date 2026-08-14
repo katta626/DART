@@ -78,6 +78,7 @@ def handle_completed_observation(pulsar: str, log_name: str, log_current: list[s
             f"{observation_over_url}?pulsar_name={quote(pulsar)}",
             timeout=request_timeout_seconds,
         )
+
         if log_name in log_current:
             log_current.remove(log_name)
             db.update_system_status("Log_Current", log_current)
