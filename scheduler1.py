@@ -1,5 +1,6 @@
 import os
 import time
+import re
 from datetime import datetime
 from urllib.parse import quote
 
@@ -214,9 +215,9 @@ def main() -> None:
             continue
 
         try:
-            if re.match(r"^J\d{4}\+\d{4}", pulsar:
+            if re.match(r"^J\d{4}\+\d{4}", pulsar):
                 update_standard_observation(pulsar, data, log_current)
-            else pulsar == QUICK_OBSERVATION_NAME:
+            else:
                 update_quick_observation(pulsar, data, log_current)
         except Exception as exc:
             print(f"Scheduler warning for {pulsar}: {exc}")
