@@ -63,6 +63,38 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON, initial_sidebar_s
 
 
 _APP_RUNTIME = {"proc": None}
+HDF5_SYNC_SCRIPT = Path(PROJECT_ROOT) / "transient_hdf5" / "real_time_PDR_monitoring.sh"
+HDF5_SYNC_LOG_PATH = Path(LOG_DIR) / "hdf5_sync.log"
+
+
+def start_hdf5_sync_runner(runtime: dict) -> None:
+    """Start the HDF5 rsync loop once for the DART server process."""
+    sync_process = runtime.get("hdf5_sync_proc")
+    if sync_process is not None and sync_process.poll() is None:
+        return
+
+    previous_log_handle = runtime.pop("hdf5_sync_log_handle", None)
+    if previous_log_handle is not None:
+        previous_log_handle.close()
+
+    if not HDF5_SYNC_SCRIPT.is_file():
+        runtime["hdf5_sync_error"] = f"Sync script not found: {HDF5_SYNC_SCRIPT}"
+        return
+
+    try:
+        HDF5_SYNC_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+        log_handle = open(HDF5_SYNC_LOG_PATH, "a", buffering=1)
+        runtime["hdf5_sync_proc"] = subprocess.Popen(
+            ["bash", str(HDF5_SYNC_SCRIPT)],
+            cwd=str(PROJECT_ROOT),
+            stdout=log_handle,
+            stderr=subprocess.STDOUT,
+            start_new_session=True,
+        )
+        runtime["hdf5_sync_log_handle"] = log_handle
+        runtime.pop("hdf5_sync_error", None)
+    except OSError as exc:
+        runtime["hdf5_sync_error"] = f"Unable to start HDF5 sync: {exc}"
 
 
 @st.cache_resource(show_spinner=False)
@@ -71,6 +103,7 @@ def bootstrap_app_runtime() -> dict:
         db.update_observation(observation["name"], status="Not Started", started_at=None)
     db.update_system_status("Log_Current", "")
     db.update_system_status("status_current", "❌")
+    start_hdf5_sync_runner(_APP_RUNTIME)
     return _APP_RUNTIME
 
 
@@ -79,10 +112,15 @@ def get_runtime_state() -> dict:
 
 
 def cleanup() -> None:
-    proc = get_runtime_state().get("proc")
-    if proc is not None and proc.poll() is None:
-        proc.terminate()
-        proc.wait()
+    runtime = get_runtime_state()
+    for process_key in ("proc", "hdf5_sync_proc"):
+        proc = runtime.get(process_key)
+        if proc is not None and proc.poll() is None:
+            proc.terminate()
+            proc.wait()
+    log_handle = runtime.get("hdf5_sync_log_handle")
+    if log_handle is not None:
+        log_handle.close()
 
 
 atexit.register(cleanup)
@@ -660,6 +698,18 @@ def main_1() -> None:
         render_time_panel()
 
         status_current = db.get_system_status("status_current") or "❌"
+        sync_process = runtime.get("hdf5_sync_proc")
+        sync_running = sync_process is not None and sync_process.poll() is None
+        if sync_running:
+            st.caption("HDF5 rsync: 🟢 running")
+        else:
+            st.warning("HDF5 rsync is not running.")
+            if runtime.get("hdf5_sync_error"):
+                st.caption(runtime["hdf5_sync_error"])
+            if st.button("Restart HDF5 rsync", key="restart_hdf5_rsync"):
+                start_hdf5_sync_runner(runtime)
+                st.rerun()
+
         edit_col, add_col, quick_add_col, run_col = st.columns([2, 2, 4, 3])
 
         with edit_col:
